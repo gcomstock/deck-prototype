@@ -1,0 +1,55 @@
+@value variables: "./_variables.css";
+@value color-header--xlight, color-header--light, color-header--dark, color-hover, mobile from variables;
+
+.TopLevelNav {
+  display: flex;
+  height: 100%;
+}
+
+.TopLevelNav a {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  padding: 0 16px;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.TopLevelNav a:focus {
+ color: #fff;
+}
+
+.TopLevelNav a:hover {
+ background-color: color-hover;
+ color: #fff;
+}
+
+.active {
+ box-shadow: inset 0 -6px 0 -3px color-header--xlight;
+}
+
+
+@media mobile {
+  .TopLevelNav {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .TopLevelNav a {
+    height: 48px;
+    background-color: color-header--light;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    text-align: left;
+  }
+
+  .TopLevelNav a:hover {
+    background-color: color-header--light;
+  }
+
+  .active {
+    box-shadow: inset -12px 0 0 -6px color-header--dark;
+  }
+}

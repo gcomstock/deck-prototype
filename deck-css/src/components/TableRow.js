@@ -1,0 +1,57 @@
+import React from 'react';
+import classNames from 'classnames';
+import styles from './TableRow.module.css';
+import TableRowSubTable from './TableRowSubTable.js';
+
+
+export default class TableRow extends React.Component {
+  constructor(props) {
+    super(props);
+    this.toggleExpandedState = this.toggleExpandedState.bind(this);
+
+    this.state = {
+      isExpanded: false
+    };
+  }
+
+  toggleExpandedState() {
+    this.setState({isExpanded: !this.state.isExpanded});
+  }
+
+  render() {
+    const tableRowClasses = classNames(styles.TableRow, {
+      [styles.expanded]: this.state.isExpanded
+    });
+
+    return (
+      <div>
+        <div className={tableRowClasses} onClick={this.toggleExpandedState}>
+          {this.props.cells.map((cell) => {
+            if (this.props.isMobile) {
+              return (
+                <div>
+                  <div className={styles.mobileTitle}>{cell.mobileTitle}</div>
+                  <div className={styles.mobileContent} dangerouslySetInnerHTML={{ __html: cell.content }}/>
+                </div>
+              )
+            }
+            return <div dangerouslySetInnerHTML={{ __html: cell.content }}/>
+          })}
+
+          <div>
+            { this.state.isExpanded
+              ? <i className="ico icon-arrow-expanded"/>
+              : <i className="ico icon-arrow-collapsed"/>
+            }
+          </div>
+        </div>
+
+        { this.state.isExpanded &&
+          <div className={styles.subTableContainer}>
+            <TableRowSubTable/>
+          </div>
+        }
+      </div>
+    )
+  };
+}

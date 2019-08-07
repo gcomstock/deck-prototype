@@ -1,0 +1,68 @@
+@value variables: "./_variables.css";
+@value color-hover, color-bg, color-header--dark, mobile from variables;
+
+
+.SideNavLink {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media mobile {
+  .SideNavLink {
+    line-height: 40px;
+  }
+}
+
+.active {
+  background-color: color-bg;
+}
+
+.active .name {
+  color: color-header--dark;
+}
+
+.SideNavLink:focus {
+  text-decoration: none;
+}
+
+.SideNavLink:hover {
+  background-color: color-hover;
+  text-decoration: none;
+}
+
+.notification {
+  flex: 0 0 40px;
+  padding: 0 8px;
+  justify-content: flex-end;
+  display: flex;
+  overflow: hidden;
+}
+
+.count {
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+  line-height: 16px;
+  min-width: 16px;
+  text-align: center;
+  font-size: 11px;
+  padding: 0 4px;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.name {
+  flex: 0 1 100%;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+  padding-right: 8px;
+}
+
+@media mobile {
+  .name {
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,49 @@
+@value variables: "./_variables.css";
+@value color-hover, color-subheader, color-bg, mobile from variables;
+
+
+
+
+
+
+
+
+.header {
+  composes: ManagedDeliveryHistory from "./TableLayouts.css";
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: color-bg;
+  min-height: 48px;
+  border-bottom: 1px solid #000;
+  align-items: flex-end;
+  font-weight: 600;
+  color: #000;
+}
+
+.header > div {
+  padding-bottom: 4px;
+}
+
+@media mobile {
+  .header {
+    display: none;
+  }
+}
+
+
+.collapseAll {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 16px 16px 0 0;
+  height: 32px;
+}
+.collapseAll:hover {
+  background-color: color-hover;
+}
+
+.collapseAll i {
+  margin-bottom: -8px;
+}

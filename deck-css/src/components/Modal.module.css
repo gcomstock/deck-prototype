@@ -1,0 +1,117 @@
+@value variables: "./_variables.css";
+@value color-bg, color-header, color-hover, shadow-5, mobile from variables;
+
+
+.Modal {
+  position: fixed;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.frame {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: shadow-5;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  width: calc(100% - 64px);
+  max-width: 1400px;
+
+  height: calc(100% - 64px);
+  min-height: 400px;
+  max-height: 1000px;
+}
+@media mobile {
+  .frame {
+    height: calc(100% - 48px);
+    width: calc(100% - 24px);
+  }
+}
+
+
+.header {
+  flex: 0 0 56px;
+  background-color: color-header;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+@media mobile {
+  .header {
+    flex: 0 0 48px;
+  }
+}
+
+
+.body {
+  flex: 1 1 100%;
+  overflow: scroll;
+  overscroll-behavior: contain;
+  background-color: color-bg;
+  padding: 0 64px;
+}
+@media mobile {
+  .body {
+    padding: 0 8px;
+  }
+}
+
+
+.footer {
+  flex: 0 0 64px;
+  background-color: #fff;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 4px 4px rgba(0,0,0,0.12), 0 6px 12px 8px rgba(0,0,0,0.1);
+}
+
+.title {
+  margin: 0 16px;
+  font-size: 22px;
+  font-weight: 500;
+  flex: 1 1 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media mobile {
+  .title {
+    margin: 0 12px;
+    font-size: 18px;
+  }
+}
+
+
+.close {
+  flex: 0 0 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.close:hover {
+  background-color: color-hover;
+}
+@media mobile {
+  .close {
+    flex: 0 0 48px;
+    height: 48px;
+  }
+}

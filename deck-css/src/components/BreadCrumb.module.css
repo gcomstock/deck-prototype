@@ -1,0 +1,16 @@
+@value variables: "./_variables.css";
+@value color-header, mobile from variables;
+
+.BreadCrumb {
+  color: color-header;
+  font-size: 24px;
+  margin: 16px 0;
+  text-align: center;
+  line-height: 48px;
+}
+
+@media mobile {
+  .BreadCrumb {
+    font-size: 18px;
+  }
+}

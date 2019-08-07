@@ -1,0 +1,10 @@
+@value variables: "./_variables.css";
+@value header-height from variables;
+
+
+.Body {
+  margin-top: header-height;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

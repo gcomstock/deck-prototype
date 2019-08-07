@@ -1,0 +1,60 @@
+@value variables: "./_variables.css";
+@value color-header, color--text--mid, shadow-1, mobile from variables;
+
+
+
+
+table {
+  margin: 0 16px 12px 0;
+  /*background-color: #fff;*/
+  height: 48px;
+  text-align: left;
+  font-size: 13px;
+  /*display: inline-table;*/
+  /*border-radius: 2px;*/
+  overflow: hidden;
+  /*box-shadow: shadow-1;*/
+  padding-bottom: 24px;
+}
+
+tr:first-child {
+  height: 24px;
+}
+
+th {
+  /*background-color: #666;*/
+  color: color--text--mid;
+  font-weight: 400;
+  padding: 0 16px;
+  border-bottom: 1px solid #ccc
+  /*word-break: break-all;*/
+}
+
+td {
+  color: color--text--mid;
+  padding: 6px 16px;
+  word-break: break-all;
+  vertical-align: top;
+  min-width: 80px;
+}
+
+th:first-child {
+  font-weight: 900;
+  color: #000;
+}
+
+td:first-child {
+  font-weight: 600;
+  padding-left: 32px;
+  word-break: normal;
+}
+
+td:nth-child(2) {
+  font-style: italic;
+  word-break: normal;
+}
+
+span {
+  width: 16px;
+  display: inline-block;
+}

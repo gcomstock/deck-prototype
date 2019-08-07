@@ -1,0 +1,86 @@
+@value variables: "./_variables.css";
+@value color-hover, color-bg, color--tablerow--mid, color-hover--ffffff, color--text--mid, color-header--dark, mobile, shadow-1 from variables;
+
+
+.TableRow {
+  composes: ManagedDeliveryHistory from "./TableLayouts.css";
+
+  min-height: 48px;
+  cursor: pointer;
+  overflow: hidden;
+  align-items: center;
+  font-size: 13px;
+}
+
+.TableRow:hover {
+  background-color: color-hover;
+}
+
+
+
+
+@media mobile {
+  .TableRow {
+    padding: 0 8px;
+  }
+  .TableRow:hover {
+    background-color: color-hover;
+  }
+}
+
+
+.expanded {
+  position: sticky;
+  top: 48px;
+  background-color: #fff;
+  z-index: 1;
+}
+.expanded:hover {
+  background-color: color-hover--ffffff;
+}
+
+@media mobile {
+  .expanded {
+    position: static;
+  }
+  .expanded:hover {
+    background-color: #fff;
+  }
+}
+
+.subTableContainer {
+  background-color: #fff;
+  padding: 16px 0 0 16px;
+  margin-bottom: 16px;
+
+  overflow-x: scroll;
+  position: relative;
+  z-index: 0;
+}
+
+/*.subTableContainer:after {*/
+  /*content: '';*/
+  /*position: sticky;*/
+  /*width: 32px;*/
+  /*height: 100%;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);*/
+/*}*/
+
+
+.mobileTitle {
+  flex: 0 0 100%;
+  font-weight: 600;
+  margin-top: 8px;
+  color: color-header--dark;
+}
+
+.mobileContent {
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 4px;
+  margin-left: 4px;
+}

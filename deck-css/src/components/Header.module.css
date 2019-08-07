@@ -1,0 +1,68 @@
+@value variables: "./_variables.css";
+@value header-height, color-header, color-hover, mobile from variables;
+
+
+.Header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: header-height;
+  background-color: color-header;
+  display: flex;
+  align-items: center;
+  z-index: 21;
+}
+
+.menuButton {
+  flex: 0 0 header-height;
+  height: header-height;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.menuButton.disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menuButton:hover {
+  background-color: color-hover;
+}
+
+.logo {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  padding: 0 16px;
+  margin: 0 24px;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.logo:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo:hover {
+  color: #fff;
+  background-color: color-hover;
+}
+
+@media mobile {
+  .logo {
+    flex: 1 1 100%;
+    margin-right: 48px;
+  }
+
+  .logo:hover {
+    background-color: transparent;
+  }
+}
