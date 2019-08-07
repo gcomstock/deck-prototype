@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/deck/static/css/main.97938f06.chunk.css",
-    "main.js": "/deck/static/js/main.86fd32fb.chunk.js",
-    "main.js.map": "/deck/static/js/main.86fd32fb.chunk.js.map",
-    "runtime~main.js": "/deck/static/js/runtime~main.ed5571b4.js",
-    "runtime~main.js.map": "/deck/static/js/runtime~main.ed5571b4.js.map",
-    "static/js/2.fb755983.chunk.js": "/deck/static/js/2.fb755983.chunk.js",
-    "static/js/2.fb755983.chunk.js.map": "/deck/static/js/2.fb755983.chunk.js.map",
-    "index.html": "/deck/index.html",
-    "precache-manifest.51cbfeaa3e39bc2b716bc0372601c12b.js": "/deck/precache-manifest.51cbfeaa3e39bc2b716bc0372601c12b.js",
-    "service-worker.js": "/deck/service-worker.js",
-    "static/css/main.97938f06.chunk.css.map": "/deck/static/css/main.97938f06.chunk.css.map",
-    "static/media/BoatLoader.less": "/deck/static/media/BoatLoader.5144b66b.less",
-    "static/media/Drawer.less": "/deck/static/media/Drawer.6dd7bfec.less",
-    "static/media/DrawerArea.less": "/deck/static/media/DrawerArea.06efc1a2.less",
-    "static/media/NoticeBubble.less": "/deck/static/media/NoticeBubble.916f8df2.less",
-    "static/media/style.css": "/deck/static/media/icomoon.d4ffeb7c.woff"
+    "main.css": "/deck-css/static/css/main.b7f953ba.chunk.css",
+    "main.js": "/deck-css/static/js/main.86fd32fb.chunk.js",
+    "main.js.map": "/deck-css/static/js/main.86fd32fb.chunk.js.map",
+    "runtime~main.js": "/deck-css/static/js/runtime~main.6b62428a.js",
+    "runtime~main.js.map": "/deck-css/static/js/runtime~main.6b62428a.js.map",
+    "static/js/2.fb755983.chunk.js": "/deck-css/static/js/2.fb755983.chunk.js",
+    "static/js/2.fb755983.chunk.js.map": "/deck-css/static/js/2.fb755983.chunk.js.map",
+    "index.html": "/deck-css/index.html",
+    "precache-manifest.63aa5debc49a22457c33c420c25c23aa.js": "/deck-css/precache-manifest.63aa5debc49a22457c33c420c25c23aa.js",
+    "service-worker.js": "/deck-css/service-worker.js",
+    "static/css/main.b7f953ba.chunk.css.map": "/deck-css/static/css/main.b7f953ba.chunk.css.map",
+    "static/media/BoatLoader.less": "/deck-css/static/media/BoatLoader.5144b66b.less",
+    "static/media/Drawer.less": "/deck-css/static/media/Drawer.6dd7bfec.less",
+    "static/media/DrawerArea.less": "/deck-css/static/media/DrawerArea.06efc1a2.less",
+    "static/media/NoticeBubble.less": "/deck-css/static/media/NoticeBubble.916f8df2.less",
+    "static/media/style.css": "/deck-css/static/media/icomoon.d4ffeb7c.woff"
   }
 }
