@@ -2,12 +2,6 @@
 @value color-hover, color-subheader, color-bg, mobile from variables;
 
 
-
-
-
-
-
-
 .header {
   composes: ManagedDeliveryHistory from "./TableLayouts.css";
 
@@ -25,13 +19,6 @@
 .header > div {
   padding-bottom: 4px;
 }
-
-@media mobile {
-  .header {
-    display: none;
-  }
-}
-
 
 .collapseAll {
   cursor: pointer;

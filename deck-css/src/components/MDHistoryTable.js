@@ -1,6 +1,11 @@
 import React from 'react';
-import styles from './MDHistoryTable.module.css';
 import TableRow from './TableRow.js';
+import TableHeader from './TableHeader.js';
+
+
+
+// This is just a stubbed out component that represents the getting/shaping of the content specific to this table.
+// Lets discuss this, and the markup for these cells specifically
 
 
 export default class MDHistoryTable extends React.Component {
@@ -31,22 +36,8 @@ export default class MDHistoryTable extends React.Component {
     }
 
     return (
-      <div className={styles.MDHistoryTable}>
-
-        <div className={styles.header}>
-          <div>
-            Where
-          </div>
-          <div>
-            What
-          </div>
-          <div>
-            When
-          </div>
-          <div className={styles.collapseAll}>
-            <i className="ico icon-arrow-toggle-all"></i>
-          </div>
-        </div>
+      <>
+        <TableHeader isMobile={this.props.isMobile}/>
 
         {stubbedRows1.map((value) => {
           return <TableRow cells={value} isMobile={this.props.isMobile}/>
@@ -54,8 +45,7 @@ export default class MDHistoryTable extends React.Component {
         {stubbedRows2.map((value) => {
           return <TableRow cells={value} isMobile={this.props.isMobile}/>
         })}
-
-      </div>
+      </>
     )
   }
 }

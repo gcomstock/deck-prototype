@@ -15,18 +15,17 @@
 .TableRow:hover {
   background-color: color-hover;
 }
-
-
-
-
 @media mobile {
   .TableRow {
-    padding: 0 8px;
+    padding: 0 8px 16px 8px;
+    margin: 16px 0;
+    border-bottom: 1px solid #ccc;
   }
   .TableRow:hover {
-    background-color: color-hover;
+    background-color: transparent;
   }
 }
+
 
 
 .expanded {
@@ -42,11 +41,14 @@
 @media mobile {
   .expanded {
     position: static;
+    margin: 0;
+    border-bottom: none;
   }
   .expanded:hover {
     background-color: #fff;
   }
 }
+
 
 .subTableContainer {
   background-color: #fff;
