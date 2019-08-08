@@ -1,6 +1,6 @@
 {
-  "homepage": "https://gcomstock.github.io/deck-css",
-  "name": "deck-css",
+  "homepage": "https://gcomstock.github.io/deck-prototype",
+  "name": "deck-prototype",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
