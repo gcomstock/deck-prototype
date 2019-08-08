@@ -19,7 +19,7 @@ export default class MDHistoryTable extends React.Component {
         {mobileTitle: 'When', content: '2018-10-17 15:51:00 PDT <span class="time--italics">30 minutes ago</span>'}
       ],
       stubbedRow2: [
-        {mobileTitle: 'Where', content: 'foo'},
+        {mobileTitle: 'Where', content: '<span class="where env env--prod">prod</span><span class="where arrow"></span>US-WEST-1<span class="where arrow"></span>keeldemo<span class="where arrow"></span><span class="where verPill verPill--old">v304</span><span class="where arrow"></span><span class="where verPill">v305</span>'},
         {mobileTitle: 'What', content: '<i class="ico ico--withLabel icon-md-delta-resolved"></i><span class="mdAction">ResourceDeltaResolved</span>'},
         {mobileTitle: 'When', content: '2018-10-17 15:51:00 PDT <span class="time--italics">30 minutes ago</span>'}
       ]

@@ -19,13 +19,13 @@ export default class TableRow extends React.Component {
   }
 
   render() {
-    const tableRowClasses = classNames(styles.TableRow, {
+    const mainRowClasses = classNames(styles.mainRow, {
       [styles.expanded]: this.state.isExpanded
     });
 
     return (
-      <div>
-        <div className={tableRowClasses} onClick={this.toggleExpandedState}>
+      <div className={styles.TableRow}>
+        <div className={mainRowClasses} onClick={this.toggleExpandedState}>
           {this.props.cells.map((cell) => {
             if (this.props.isMobile) {
               return (
@@ -47,7 +47,7 @@ export default class TableRow extends React.Component {
         </div>
 
         { this.state.isExpanded &&
-          <div className={styles.subTableContainer}>
+          <div className={styles.subContainer}>
             <TableRowSubTable/>
           </div>
         }

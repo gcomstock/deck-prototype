@@ -1,5 +1,5 @@
 @value variables: "./_variables.css";
-@value color-hover, color-subheader, color-bg, mobile from variables;
+@value color-hover, color-header--dark, color-subheader, color-bg, mobile from variables;
 
 
 .header {
@@ -13,7 +13,8 @@
   border-bottom: 1px solid #000;
   align-items: flex-end;
   font-weight: 600;
-  color: #000;
+  /*color: #000;*/
+  color: color-header--dark;
 
   font-size: 13px;
   padding: 0 16px;
