@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2a4ba8098e93d499ab4e9dd1f526dfc9",
+    "revision": "9e4f1cc55072097b5e2a30a539a9f0b3",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "b9b7558e61432ac29bf1",
+    "revision": "a5d7d09e405416f73f08",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "dfb1b6ac5a02a7b423b2",
-    "url": "/deck-prototype/static/css/main.a479b10d.chunk.css"
+    "revision": "a28f23c940924fac58a1",
+    "url": "/deck-prototype/static/css/main.809fe3c0.chunk.css"
   },
   {
-    "revision": "b9b7558e61432ac29bf1",
-    "url": "/deck-prototype/static/js/2.37c0dc97.chunk.js"
+    "revision": "a5d7d09e405416f73f08",
+    "url": "/deck-prototype/static/js/2.59dcff8e.chunk.js"
   },
   {
-    "revision": "dfb1b6ac5a02a7b423b2",
-    "url": "/deck-prototype/static/js/main.4756be5a.chunk.js"
+    "revision": "a28f23c940924fac58a1",
+    "url": "/deck-prototype/static/js/main.f3ece2a8.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
