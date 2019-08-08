@@ -24,7 +24,7 @@ export default class SideNav extends React.Component {
         <SideNavLink name="Pipelines" to="#" count="1"/>
         <SideNavLink name="Canary Configs" to="#"/>
         <SideNavLink name="Canary Reports" to="#" count="992"/>
-8
+
         <div className={styles.tinyTitle}>Infrastructure</div>
         <SideNavLink name="Clusters" to="/applications/app/clusters"/>
         <SideNavLink name="Load Balancers" to="#"/>

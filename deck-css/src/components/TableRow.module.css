@@ -10,6 +10,11 @@
   overflow: hidden;
   align-items: center;
   font-size: 13px;
+
+
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .TableRow:hover {
@@ -37,11 +42,12 @@
 .expanded:hover {
   background-color: color-hover--ffffff;
 }
-
 @media mobile {
   .expanded {
     position: static;
-    margin: 0;
+    margin: 16px 0 0 0;
+    padding-left: 7px; /*for border */
+    border-left: 1px solid color-header--dark;
     border-bottom: none;
   }
   .expanded:hover {
@@ -59,6 +65,12 @@
   position: relative;
   z-index: 0;
 }
+@media mobile {
+  .subTableContainer {
+    border-left: 1px solid color-header--dark;
+  }
+}
+
 
 /*.subTableContainer:after {*/
   /*content: '';*/
@@ -73,7 +85,7 @@
 
 .mobileTitle {
   flex: 0 0 100%;
-  font-weight: 600;
+  font-weight: 900;
   margin-top: 8px;
   color: color-header--dark;
 }

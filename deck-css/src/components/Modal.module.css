@@ -60,6 +60,7 @@
   flex: 1 1 100%;
   overflow: scroll;
   overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   background-color: color-bg;
   padding: 0 64px;
 }

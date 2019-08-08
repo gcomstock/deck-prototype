@@ -2,18 +2,6 @@
 @value mobile from variables;
 
 
-.ManagedDeliveryHistory {
-  padding: 0 16px;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 14px;
-}
-@media mobile {
-  .ManagedDeliveryHistory {
-    font-size: 12px;
-  }
-}
-
 .ManagedDeliveryHistory > div {
   /*white-space: nowrap;*/
   /*overflow: hidden;*/

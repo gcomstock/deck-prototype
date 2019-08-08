@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom';
+import { HashRouter as Router, Route, Link, withRouter } from 'react-router-dom';
 
 import Route__Root from './Route__Root';
 import Route__Myteam from './Route__Myteam';
@@ -8,6 +8,7 @@ import Route__Applications__App from './Route__Applications__App';
 import Route__Applications__App__Clusters from './Route__Applications__App__Clusters';
 import Route__Applications__App__Functions from './Route__Applications__App__Functions';
 import Header from './components/Header';
+import 'source-sans-pro/source-sans-pro.css';
 
 // inherited styles from existing deck
 //import './deck-oss_CSS.css';
@@ -67,7 +68,7 @@ export class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename='/'>
         <div>
           <Header
             isSideNavOpen={this.state.isSideNavOpen}
