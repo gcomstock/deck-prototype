@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e4f1cc55072097b5e2a30a539a9f0b3",
+    "revision": "797e1ebca31643b6d085d5daa3cfddbf",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "a5d7d09e405416f73f08",
+    "revision": "b6ccd0e12b90070da4be",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "a28f23c940924fac58a1",
-    "url": "/deck-prototype/static/css/main.809fe3c0.chunk.css"
+    "revision": "8bcdaa128d2680037a0d",
+    "url": "/deck-prototype/static/css/main.c28b0eb2.chunk.css"
   },
   {
-    "revision": "a5d7d09e405416f73f08",
-    "url": "/deck-prototype/static/js/2.59dcff8e.chunk.js"
+    "revision": "b6ccd0e12b90070da4be",
+    "url": "/deck-prototype/static/js/2.a9948d15.chunk.js"
   },
   {
-    "revision": "a28f23c940924fac58a1",
-    "url": "/deck-prototype/static/js/main.f3ece2a8.chunk.js"
+    "revision": "8bcdaa128d2680037a0d",
+    "url": "/deck-prototype/static/js/main.15bab639.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5144b66b5a6bc4dda263f34b48f6b562",
     "url": "/deck-prototype/static/media/BoatLoader.5144b66b.less"
-  },
-  {
-    "revision": "6dd7bfec6fb18f4f516894b5643e2e6e",
-    "url": "/deck-prototype/static/media/Drawer.6dd7bfec.less"
   },
   {
     "revision": "06efc1a226cdbc37510df35c71f313d1",
