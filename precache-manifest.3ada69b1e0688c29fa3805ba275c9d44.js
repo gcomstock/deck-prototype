@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6937313ba1c59f6211a052f890fa1af",
+    "revision": "df00684e4a2ba4a963115868075f222d",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "055370fb7591fb9dd700",
+    "revision": "283a9442705c51362b95",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "35b396f2b0668ee053eb",
-    "url": "/deck-prototype/static/css/main.4b1fd556.chunk.css"
+    "revision": "8466399f6fbf0cfc2e00",
+    "url": "/deck-prototype/static/css/main.f4fe6b80.chunk.css"
   },
   {
-    "revision": "055370fb7591fb9dd700",
-    "url": "/deck-prototype/static/js/2.c4c0072c.chunk.js"
+    "revision": "283a9442705c51362b95",
+    "url": "/deck-prototype/static/js/2.5da85e82.chunk.js"
   },
   {
-    "revision": "35b396f2b0668ee053eb",
-    "url": "/deck-prototype/static/js/main.8dfde8e8.chunk.js"
+    "revision": "8466399f6fbf0cfc2e00",
+    "url": "/deck-prototype/static/js/main.a83d0425.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
