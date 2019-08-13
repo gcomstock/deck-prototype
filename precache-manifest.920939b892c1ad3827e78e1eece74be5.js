@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8dec5104c8ac828e58971a0c9fd64077",
+    "revision": "7c90c1ec0156014989769f5d6933f86b",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "283a9442705c51362b95",
+    "revision": "1a51fb0bf5f5dc1721ec",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "cf4abf44f7d745d38045",
-    "url": "/deck-prototype/static/css/main.f2b4250c.chunk.css"
+    "revision": "fd6497711ce1a5bfd72e",
+    "url": "/deck-prototype/static/css/main.647387a1.chunk.css"
   },
   {
-    "revision": "283a9442705c51362b95",
-    "url": "/deck-prototype/static/js/2.5da85e82.chunk.js"
+    "revision": "1a51fb0bf5f5dc1721ec",
+    "url": "/deck-prototype/static/js/2.b7994694.chunk.js"
   },
   {
-    "revision": "cf4abf44f7d745d38045",
-    "url": "/deck-prototype/static/js/main.a83d0425.chunk.js"
+    "revision": "fd6497711ce1a5bfd72e",
+    "url": "/deck-prototype/static/js/main.d327caa9.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
     "url": "/deck-prototype/static/js/runtime~main.0e0a4e99.js"
-  },
-  {
-    "revision": "5144b66b5a6bc4dda263f34b48f6b562",
-    "url": "/deck-prototype/static/media/BoatLoader.5144b66b.less"
   },
   {
     "revision": "604a59706d4852f5f5c5362aa035ccf9",

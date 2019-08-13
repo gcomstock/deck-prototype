@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/deck-prototype/static/css/main.f2b4250c.chunk.css",
-    "main.js": "/deck-prototype/static/js/main.a83d0425.chunk.js",
-    "main.js.map": "/deck-prototype/static/js/main.a83d0425.chunk.js.map",
+    "main.css": "/deck-prototype/static/css/main.647387a1.chunk.css",
+    "main.js": "/deck-prototype/static/js/main.d327caa9.chunk.js",
+    "main.js.map": "/deck-prototype/static/js/main.d327caa9.chunk.js.map",
     "runtime~main.js": "/deck-prototype/static/js/runtime~main.0e0a4e99.js",
     "runtime~main.js.map": "/deck-prototype/static/js/runtime~main.0e0a4e99.js.map",
     "static/css/2.d61080d3.chunk.css": "/deck-prototype/static/css/2.d61080d3.chunk.css",
-    "static/js/2.5da85e82.chunk.js": "/deck-prototype/static/js/2.5da85e82.chunk.js",
-    "static/js/2.5da85e82.chunk.js.map": "/deck-prototype/static/js/2.5da85e82.chunk.js.map",
+    "static/js/2.b7994694.chunk.js": "/deck-prototype/static/js/2.b7994694.chunk.js",
+    "static/js/2.b7994694.chunk.js.map": "/deck-prototype/static/js/2.b7994694.chunk.js.map",
     "index.html": "/deck-prototype/index.html",
-    "precache-manifest.006e9bc1c60038aaaa9415a628504e96.js": "/deck-prototype/precache-manifest.006e9bc1c60038aaaa9415a628504e96.js",
+    "precache-manifest.920939b892c1ad3827e78e1eece74be5.js": "/deck-prototype/precache-manifest.920939b892c1ad3827e78e1eece74be5.js",
     "service-worker.js": "/deck-prototype/service-worker.js",
     "static/css/2.d61080d3.chunk.css.map": "/deck-prototype/static/css/2.d61080d3.chunk.css.map",
-    "static/css/main.f2b4250c.chunk.css.map": "/deck-prototype/static/css/main.f2b4250c.chunk.css.map",
-    "static/media/BoatLoader.less": "/deck-prototype/static/media/BoatLoader.5144b66b.less",
+    "static/css/main.647387a1.chunk.css.map": "/deck-prototype/static/css/main.647387a1.chunk.css.map",
     "static/media/source-sans-pro.css": "/deck-prototype/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2",
     "static/media/style.css": "/deck-prototype/static/media/icomoon.d4ffeb7c.woff"
   }
