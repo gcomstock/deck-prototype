@@ -1,6 +1,5 @@
 @value variables: "./_variables.css";
-@value color-hover, color-bg, color--tablerow--mid, color-hover--ffffff, color--text--mid, color-header--dark, mobile, shadow-1 from variables;
-
+@value gradient-hover, color-bg, color--tablerow--mid, gradient-hover, color--text--mid, color-header--dark, mobile, shadow-1 from variables;
 
 
 .TableRow:last-child {
@@ -8,20 +7,19 @@
 }
 
 .mainRow {
-  composes: ManagedDeliveryHistory from "./TableLayouts.css";
+  composes: ManagedDeliveryHistory from "./TableLayouts.module.css";
 
   min-height: 48px;
   cursor: pointer;
   overflow: hidden;
   align-items: center;
   font-size: 13px;
-  padding: 0 16px;
-  display: flex;
+  padding: 8px 16px;
   flex-wrap: wrap;
 }
 
 .mainRow:hover {
-  background-color: color-hover;
+  background-image: gradient-hover;
 }
 @media mobile {
   .mainRow {
@@ -42,7 +40,7 @@
   z-index: 1;
 }
 .expanded:hover {
-  background-color: color-hover--ffffff;
+  background-image: gradient-hover;
 }
 @media mobile {
   .expanded {

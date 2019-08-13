@@ -1,5 +1,5 @@
 @value variables: "./_variables.css";
-@value header-height, color-header, color-hover, mobile from variables;
+@value header-height, color-header, gradient-hover, mobile from variables;
 
 
 .Header {
@@ -30,7 +30,7 @@
 }
 
 .menuButton:hover {
-  background-color: color-hover;
+  background-image: gradient-hover;
 }
 
 .logo {
@@ -53,7 +53,7 @@
 
 .logo:hover {
   color: #fff;
-  background-color: color-hover;
+  background-image: gradient-hover;
 }
 
 @media mobile {

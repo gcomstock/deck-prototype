@@ -10,27 +10,26 @@
 @value color-subheader: #555;
 
 
-@value color-warn: #FFEBA0;
-
-@value shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-@value shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-@value shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-@value shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-@value shadow-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+@value color--warn: #ffeba0;
+@value color--exception: #ff8282;
 
 
+/*@value color-hover: rgba(100,180,200,0.15);*/
+/*@value color-hover--ffffff: #e1edef;*/
+/*@value color-hover--e8e8e8: #cde6eb;*/
+/*@value color-hover--777777: #668e96;*/
 
-@value color-hover: rgba(10,180,200,0.12);
-@value color-hover--ffffff: #e1edef;
-@value color-hover--e8e8e8: #cde6eb;
+
+@value gradient-hover: linear-gradient(to right, rgba(100,180,200,0.2), rgba(100,180,200,0.2));
+
+
+
 
 
 @value header-height: 48px;
 
 
 @value color--text--mid: #444444;
-
-
 
 @value color--tablerow--mid: #e8e8e8;
 
@@ -40,6 +39,13 @@
 /*@value color-placeholder: rgba(0,0,0,0.1);*/
 @value color-placeholder: transparent;
 
+
+
+@value shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+@value shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+@value shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+@value shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+@value shadow-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 
 @value mobile: screen and (max-width: 1024px);

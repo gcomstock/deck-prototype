@@ -1,5 +1,5 @@
 import React from 'react';
-import './DrawerArea.less';
+import styles from './DrawerArea.module.css';
 
 
 export default class DrawerArea extends React.Component {
@@ -9,7 +9,7 @@ export default class DrawerArea extends React.Component {
 
   render() {
     return (
-      <div className="DrawerArea" style={{ flex: `0 1000 ${this.props.drawerWidth}`}}>
+      <div className={styles.DrawerArea} style={{ flex: `0 1000 ${this.props.drawerWidth}`}}>
         {this.props.children}
       </div>
     )

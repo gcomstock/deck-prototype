@@ -41,7 +41,7 @@ export default class Header extends React.Component {
         { !this.props.isMobile && <TopLevelNav/> }
 
 
-        <button onClick={this.toggleDemoModal}>Test Modal</button>
+        <button onClick={this.toggleDemoModal}>MD History</button>
 
         { //placeholder to mock out modal
           this.state.isDemoModalOpen && <Modal toggleDemoModal={this.toggleDemoModal} isMobile={this.props.isMobile} />

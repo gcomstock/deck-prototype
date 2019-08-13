@@ -1,0 +1,51 @@
+@value variables: "./_variables.css";
+@value color--warn, color--exception from variables;
+
+
+.NoticeBubble {
+  display: flex;
+  border-radius: 3px;
+  /*min-height: 48px;*/
+  
+  max-width: 600px;
+  padding: 8px;
+  font-size: 13px;
+
+  align-items: flex-start;
+}
+
+.NoticeBubble.warning {
+  background-color: color--warn;
+  animation: noticeStrobe 4s linear;
+}
+
+
+.iconContainer {
+  flex: 0 0 32px;
+  height: 32px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconContainer.warning {
+  background-color: color--exception;
+  border-radius: 48px;
+  color: #ffffff;
+}
+
+.text {
+  padding: 0;
+  align-self: center;
+}
+
+
+@keyframes noticeStrobe {
+  0% { background-color: transparent; }
+  20% { background-color: color--warn; }
+  40% { background-color: transparent; }
+  60% { background-color: color--warn; }
+  80% { background-color: transparent; }
+  100% { background-color: color--warn; }
+}

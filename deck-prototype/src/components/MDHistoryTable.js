@@ -37,7 +37,12 @@ export default class MDHistoryTable extends React.Component {
 
     return (
       <>
-        <TableHeader isMobile={this.props.isMobile}/>
+        <TableHeader
+          isMobile={this.props.isMobile}
+          columns={['Where','What','When']}
+          toggleAll={true}
+          layout="ManagedDeliveryHistory"
+        />
 
         {stubbedRows1.map((value) => {
           return <TableRow cells={value} isMobile={this.props.isMobile}/>

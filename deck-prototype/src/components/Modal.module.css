@@ -1,5 +1,5 @@
 @value variables: "./_variables.css";
-@value color-bg, color-header, color-hover, shadow-5, mobile from variables;
+@value color-bg, color-header, gradient-hover, shadow-5, mobile from variables;
 
 
 .Modal {
@@ -114,7 +114,7 @@
   cursor: pointer;
 }
 .close:hover {
-  background-color: color-hover;
+  background-image: gradient-hover;
 }
 @media mobile {
   .close {

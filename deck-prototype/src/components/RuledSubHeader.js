@@ -1,11 +1,10 @@
 import React from 'react';
-import './RuledSubHeader.less';
+import styles from './RuledSubHeader.module.css';
 
 
-export default class Drawer extends React.Component {
+export default class RuledSubHeader extends React.Component {
   constructor(props) {
     super(props);
-    this.close = this.close.bind(this);
   }
 
   toggle() {
@@ -14,8 +13,8 @@ export default class Drawer extends React.Component {
 
   render() {
     return (
-      <div className="RuledSubHeader" onClick={this.toggle}>
-        {this.props.children}
+      <div className={styles.RuledSubHeader} onClick={this.toggle}>
+        {this.props.text}
       </div>
     )
   }

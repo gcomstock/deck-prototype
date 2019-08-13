@@ -1,5 +1,5 @@
 @value variables: "./_variables.css";
-@value color-header--xlight, color-header--light, color-header--dark, color-hover, mobile from variables;
+@value gradient-hover, color-header--xlight, color-header--light, color-header--dark, mobile from variables;
 
 .TopLevelNav {
   display: flex;
@@ -18,16 +18,16 @@
 }
 
 .TopLevelNav a:focus {
- color: #fff;
+  color: #fff;
 }
 
 .TopLevelNav a:hover {
- background-color: color-hover;
- color: #fff;
+  background-image: gradient-hover;
+  color: #fff;
 }
 
 .active {
- box-shadow: inset 0 -6px 0 -3px color-header--xlight;
+  box-shadow: inset 0 -6px 0 -3px color-header--xlight;
 }
 
 

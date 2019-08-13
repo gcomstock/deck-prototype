@@ -1,5 +1,5 @@
 @value variables: "./_variables.css";
-@value color-hover, color-bg, color-header--dark, mobile from variables;
+@value gradient-hover, color-bg, color-header--dark, mobile from variables;
 
 
 .SideNavLink {
@@ -27,7 +27,7 @@
 }
 
 .SideNavLink:hover {
-  background-color: color-hover;
+  background-image: gradient-hover;
   text-decoration: none;
 }
 

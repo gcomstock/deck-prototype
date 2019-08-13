@@ -1,0 +1,7 @@
+@value variables: "./_variables.css";
+@value color-placeholder from variables;
+
+.DrawerArea {
+  position: relative;
+  background-color: color-placeholder;
+}

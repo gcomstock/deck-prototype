@@ -22,9 +22,8 @@ export default class Route__App__Functions__Function extends React.Component {
         title="FunctionName"
         subTitle="MY-AWS-ACCOUNT / US-WEST-2 / v004"
       >
-        <NoticeBubble
-          icon="warn-diamond"
-        />
+        <NoticeBubble icon="warn-diamond" noticeType="warning" />
+
         <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>
         <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>
       </Drawer>

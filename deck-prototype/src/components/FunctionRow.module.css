@@ -1,0 +1,46 @@
+@value variables: "./_variables.css";
+@value color-placeholder, gradient-hover from variables;
+
+
+
+.FunctionRow:last-child {
+  margin-bottom: 64px;
+}
+
+
+.mainRow {
+  display: flex;
+  background-color: #e2e2e2;
+  height: 48px;
+  margin-bottom: 8px;
+  margin-left: 40px;
+  align-items: center;
+  padding-left: 8px;
+}
+
+
+.trafficSplit {
+  width: 40px;
+}
+
+
+.version {
+  composes: Functions from "./TableLayouts.module.css";
+
+  height: 48px;
+  background-color: #e8e8e8;
+  margin-bottom: 1px;
+
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.version:hover {
+  background-image: gradient-hover;
+}
+
+.version:last-child {
+  margin-bottom: 24px;
+}

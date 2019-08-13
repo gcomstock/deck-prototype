@@ -1,5 +1,5 @@
 import React from 'react';
-import './Drawer.less';
+import styles from './Drawer.module.css';
 
 
 export default class Drawer extends React.Component {
@@ -14,25 +14,25 @@ export default class Drawer extends React.Component {
 
   render() {
     return (
-      <div className="Drawer" style={{ width: this.props.drawerWidth }}>
-        <div className="drawer-header">
-          <div className="header-icon-area">
-            { this.props.icon && <i className={`icon-${this.props.icon}`} style={{fontSize: "48px", margin: "0 12px"}}/> }
+      <div className={styles.Drawer} style={{ width: this.props.drawerWidth }}>
+        <div className={styles.header}>
+          <div className={styles.headerIconArea}>
+            { this.props.icon && <i className={`ico icon-${this.props.icon}`} style={{fontSize: "48px"}}/> }
           </div>
-          <div className="header-title-area">
-            <div className="header-title">{this.props.title}</div>
-            { this.props.subTitle && <div className="header-subtitle">{this.props.subTitle}</div> }
+          <div className={styles.headerTitleArea}>
+            <div className={styles.headerTitle}>{this.props.title}</div>
+            { this.props.subTitle && <div className={styles.headerSubtitle}>{this.props.subTitle}</div> }
           </div>
-          <div className="header-close-area">
-            <div className="header-close" onClick={this.close}>
+          <div className={styles.headerCloseArea}>
+            <div className={styles.headerClose} onClick={this.close}>
               <i className="ico icon-close"/>
             </div>
           </div>
         </div>
-        <div className="body">
+        <div className={styles.body}>
           {this.props.children}
         </div>
-        <div className="scroll-fader"/>
+        <div className={styles.scrollFader}/>
       </div>
     )
   }

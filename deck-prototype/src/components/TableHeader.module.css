@@ -1,42 +1,45 @@
 @value variables: "./_variables.css";
-@value color-hover, color-header--dark, color-subheader, color-bg, mobile from variables;
+@value gradient-hover, color-header--dark, color-subheader, color-bg, mobile from variables;
 
 
-.header {
-  composes: ManagedDeliveryHistory from "./TableLayouts.css";
 
+
+.headerContainer {
   position: sticky;
-  top: 0;
   z-index: 2;
   background-color: color-bg;
-  min-height: 48px;
   border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+  display: flex;
   align-items: flex-end;
-  font-weight: 600;
-  /*color: #000;*/
-  color: color-header--dark;
+}
 
+.header {
+  font-weight: 600;
+  color: color-header--dark;
   font-size: 13px;
   padding: 0 16px;
-  display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: no-wrap;*/
+  width: 100%;
+  /*height: 100%;*/
+  align-items: flex-end;
+  min-height: 48px;
 }
 
 .header > div {
-  padding-bottom: 4px;
 }
 
-.collapseAll {
+.toggleAll {
   cursor: pointer;
   display: flex;
   align-items: flex-end;
   border-radius: 16px 16px 0 0;
   height: 32px;
 }
-.collapseAll:hover {
-  background-color: color-hover;
+.toggleAll:hover {
+  background-image: gradient-hover;
 }
 
-.collapseAll i {
-  margin-bottom: -8px;
+.toggleAll i {
+  margin-bottom: -4px;
 }

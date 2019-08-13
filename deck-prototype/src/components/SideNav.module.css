@@ -1,5 +1,5 @@
 @value variables: "./_variables.css";
-@value color-header, color-subheader, color-bg, color-hover, header-height, shadow-4, mobile from variables;
+@value color-header, color-subheader, color-bg, header-height, shadow-4, mobile from variables;
 
 
 .SideNav {
