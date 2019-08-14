@@ -1,4 +1,4 @@
-@value color-bg: #ffffff;
+@value colorBg: #ffffff;
 
 
 @value colorBg: #ffffff;
@@ -7,9 +7,9 @@
 
 
 @value colorHeader: #31556C;
-@value colorHeader--light: #647D92;
-@value colorHeader--xlight: #afbec8;
-@value colorHeader--dark: #1e3c5a;
+@value colorHeaderLight: #647D92;
+@value colorHeaderXlight: #afbec8;
+@value colorHeaderDark: #1e3c5a;
 
 
 @value colorSubheader: #555;

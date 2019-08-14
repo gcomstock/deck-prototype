@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value gradientHover, colorHeader--xlight, colorHeader--light, colorHeader--dark, mobile from variables;
+@value gradientHover, colorHeaderXlight, colorHeaderLight, colorHeaderDark, mobile from variables;
 
 .TopLevelNav {
   display: flex;
@@ -27,7 +27,7 @@
 }
 
 .active {
-  box-shadow: inset 0 -6px 0 -3px colorHeader--xlight;
+  box-shadow: inset 0 -6px 0 -3px colorHeaderXlight;
 }
 
 
@@ -40,16 +40,16 @@
 
   .TopLevelNav a {
     height: 48px;
-    background-color: colorHeader--light;
+    background-color: colorHeaderLight;
     border-top: 1px solid rgba(255,255,255,0.5);
     text-align: left;
   }
 
   .TopLevelNav a:hover {
-    background-color: colorHeader--light;
+    background-color: colorHeaderLight;
   }
 
   .active {
-    box-shadow: inset -12px 0 0 -6px colorHeader--dark;
+    box-shadow: inset -12px 0 0 -6px colorHeaderDark;
   }
 }

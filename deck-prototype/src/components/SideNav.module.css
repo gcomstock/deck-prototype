@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value colorHeader, colorSubheader, color-bg, headerHeight, shadow4, mobile from variables;
+@value colorHeader, colorSubheader, colorBg, headerHeight, shadow4, mobile from variables;
 
 
 .SideNav {

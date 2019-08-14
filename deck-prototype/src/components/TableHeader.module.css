@@ -1,11 +1,11 @@
 @value variables: "./_variables.module.css";
-@value gradientHover, colorHeader, colorHeader--dark, colorSubheader, color-bg, mobile from variables;
+@value gradientHover, colorHeader, colorHeaderDark, colorSubheader, colorBg, mobile from variables;
 
 
 .headerContainer {
   position: sticky;
   z-index: 100;
-  background-color: color-bg;
+  background-color: colorBg;
   border-bottom: 2px solid colorHeader;
   display: flex;
   align-items: flex-end;
@@ -13,7 +13,7 @@
 
 .header {
   font-weight: 600;
-  color: colorHeader--dark;
+  color: colorHeaderDark;
   font-size: 13px;
   width: 100%;
   align-items: flex-end;
@@ -56,7 +56,7 @@
   height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 4px solid color-bg;
+  border-top: 4px solid colorBg;
 }
 
 .toggleAll {

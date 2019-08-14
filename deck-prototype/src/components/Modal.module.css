@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value color-bg, colorHeader, gradientHover, shadow5, mobile from variables;
+@value colorBg, colorHeader, gradientHover, shadow5, mobile from variables;
 
 
 .Modal {
@@ -68,7 +68,7 @@
   overflow: scroll;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
-  background-color: color-bg;
+  background-color: colorBg;
   padding: 0 64px;
 }
 @media mobile {

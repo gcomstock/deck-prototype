@@ -9,6 +9,8 @@ import Route__Applications__App__Clusters from './Route__Applications__App__Clus
 import Route__Applications__App__Functions from './Route__Applications__App__Functions';
 import Header from './components/Header';
 import 'source-sans-pro/source-sans-pro.css';
+import styles from './components/_variables.module.css';
+
 
 // inherited styles from existing deck
 //import './deck-oss_CSS.css';
@@ -18,7 +20,9 @@ import 'source-sans-pro/source-sans-pro.css';
 import './assets/icomoon/style.css';
 import './style.css';
 
-const BREAKPOINT_MOBILE = 1024;
+
+
+const BREAKPOINT_MOBILE = styles.breakpointMobile;
 
 
 export class App extends React.Component {

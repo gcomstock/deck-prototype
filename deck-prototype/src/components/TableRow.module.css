@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value gradientHover, color-bg, colorTableRowMid, gradientHover, colorTextMid, colorHeader--dark, mobile, shadow1 from variables;
+@value gradientHover, colorBg, colorTableRowMid, gradientHover, colorTextMid, colorHeaderDark, mobile, shadow1 from variables;
 
 
 .TableRow:last-child {
@@ -48,7 +48,7 @@
     position: static;
     margin: 16px 0 0 0;
     padding-left: 6px; /*for border */
-    border-left: 2px solid colorHeader--dark;
+    border-left: 2px solid colorHeaderDark;
     border-bottom: none;
   }
   .expanded:hover {
@@ -68,7 +68,7 @@
 }
 @media mobile {
   .subContainer {
-    border-left: 2px solid colorHeader--dark;
+    border-left: 2px solid colorHeaderDark;
   }
 }
 
@@ -76,7 +76,7 @@
   flex: 0 0 100%;
   font-weight: 900;
   margin-top: 8px;
-  color: colorHeader--dark;
+  color: colorHeaderDark;
 }
 
 .mobileContent {
