@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './TableRow.module.css';
+import styles from './MDHistoryTableRow.module.css';
 import TableRowSubTable from './TableRowSubTable.js';
 
 
@@ -38,7 +38,7 @@ export default class TableRow extends React.Component {
             return <div dangerouslySetInnerHTML={{ __html: cell.content }}/>
           })}
 
-          <div>
+          <div className={styles.iconContainer}>
             { this.state.isExpanded
               ? <i className="ico icon-arrow-expanded"/>
               : <i className="ico icon-arrow-collapsed"/>

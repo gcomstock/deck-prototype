@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value colorMainRow, colorSubRow, gradientHover from variables;
+@value colorSubHeader, colorSubHeaderLight, colorMainRow, colorSubRow, gradientHover from variables;
 
 
 .FunctionRow {
@@ -19,7 +19,7 @@
   padding-left: 8px;
   font-size: 14px;
   font-weight: 700;
-  color: #666666;
+  color: colorSubHeader;
   cursor: pointer;
 }
 
@@ -33,7 +33,7 @@
 
 .iconContainer {
   margin-right: 8px;
-  color: #999;
+  color: colorSubHeaderLight;
   display: flex;
   align-items: center;
   flex: 0 0 24px;

@@ -14,7 +14,7 @@
 @value colorHeader: #31556c;
 @value colorHeaderDark: #1e3c5a;
 
-
+@value colorSubHeaderLight: #999;
 @value colorSubHeader: #666;
 @value colorSubHeaderDark: #444;
 
@@ -25,15 +25,11 @@
 @value gradientHover: linear-gradient(to bottom, rgba(160,180,220,0.25), rgba(160,180,220,0.25));
 
 
-@value hover: background-image: linear-gradient(to bottom, rgba(160,180,220,0.25), rgba(160,180,220,0.25));
-
-
 @value headerHeight: 48px;
 
 
 @value colorTextMid: #444444;
 @value colorTableRowMid: #e8e8e8;
-
 
 
 
@@ -48,5 +44,5 @@
 @value shadow4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 @value shadow5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
-
+@value breakpointMobile: 1024; /* for mobile js breakpoint rules */
 @value mobile: screen and (max-width: 1024px);

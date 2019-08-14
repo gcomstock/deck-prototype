@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value gradientHover, colorBg, colorBgEmphasis, colorTableRowMid, gradientHover, colorTextMid, colorHeaderDark, mobile, shadow1 from variables;
+@value gradientHover, colorBg, colorSubHeaderLight, colorBgEmphasis, colorTableRowMid, gradientHover, colorTextMid, colorHeaderDark, mobile, shadow1 from variables;
 
 
 .TableRow:last-child {
@@ -85,4 +85,8 @@
   align-items: center;
   margin-top: 4px;
   margin-left: 4px;
+}
+
+.iconContainer {
+  color: colorSubHeaderLight;
 }

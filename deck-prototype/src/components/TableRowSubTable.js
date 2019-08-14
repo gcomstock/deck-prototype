@@ -8,9 +8,6 @@ export default class TableRowSubTable extends React.Component {
   }
 
   render() {
-    //const stubMax = 5;
-    //const stubCount = Math.floor(Math.random() * Math.floor(stubMax));
-
     return (
       <>
         <table className={styles.TableRowSubtable} cellSpacing="0" cellPadding="0">

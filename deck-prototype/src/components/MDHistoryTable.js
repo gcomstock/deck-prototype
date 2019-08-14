@@ -1,5 +1,5 @@
 import React from 'react';
-import TableRow from './TableRow.js';
+import TableRow from './MDHistoryTableRow.js';
 import TableHeader from './TableHeader.js';
 
 
