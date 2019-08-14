@@ -1,11 +1,23 @@
+@value variables: "./_variables.module.css";
+@value gradientHover from variables;
+
+
 .RuledSubHeader {
   font-size: 18px;
   font-weight: 600;
   color: #777;
   border-bottom: 1px solid #777;
-  padding: 0 8px;
-  margin-bottom: 16px;
-
-  position: sticky;
-  top: 0;
+  padding: 8px 8px 0;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  z-index: 90;
+  display: flex;
+  justify-content: space-between;
 }
+
+.canToggle:hover {
+  cursor: pointer;
+  background-image: gradientHover;
+  border-radius: 8px 8px 0 0;
+}
+

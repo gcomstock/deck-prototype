@@ -1,5 +1,5 @@
-@value variables: "./_variables.css";
-@value color-header, color--text--mid, shadow-1, mobile from variables;
+@value variables: "./_variables.module.css";
+@value colorHeader, colorTextMid, shadow1, mobile from variables;
 
 
 
@@ -13,7 +13,7 @@ table {
   /*display: inline-table;*/
   /*border-radius: 2px;*/
   overflow: hidden;
-  /*box-shadow: shadow-1;*/
+  /*box-shadow: shadow1;*/
   padding-bottom: 24px;
 }
 
@@ -23,7 +23,7 @@ tr:first-child {
 
 th {
   /*background-color: #666;*/
-  color: color--text--mid;
+  color: colorTextMid;
   font-weight: 400;
   padding: 0 16px;
   border-bottom: 1px solid #ccc
@@ -31,7 +31,7 @@ th {
 }
 
 td {
-  color: color--text--mid;
+  color: colorTextMid;
   padding: 6px 16px;
   word-break: break-all;
   vertical-align: top;

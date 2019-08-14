@@ -7,6 +7,24 @@ import TableHeader from './TableHeader.js';
 // This is just a stubbed out component that represents the getting/shaping of the content specific to this table.
 // Lets discuss this, and the markup for these cells specifically
 
+const stubbedColumns = [
+  {
+    title: 'Where',
+    isSortable: false,
+    sortFn: null
+  },
+  {
+    title: 'What',
+    isSortable: false,
+    sortFn: null
+  },
+  {
+    title: 'When',
+    isSortable: true,
+    isActive: true,
+    sortFn: null
+  }
+];
 
 export default class MDHistoryTable extends React.Component {
   constructor(props) {
@@ -39,7 +57,7 @@ export default class MDHistoryTable extends React.Component {
       <>
         <TableHeader
           isMobile={this.props.isMobile}
-          columns={['Where','What','When']}
+          columns={stubbedColumns}
           toggleAll={true}
           layout="ManagedDeliveryHistory"
         />

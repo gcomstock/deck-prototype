@@ -1,7 +1,7 @@
-@value variables: "./_variables.css";
-@value color-placeholder from variables;
+@value variables: "./_variables.module.css";
+@value colorPlaceholder from variables;
 
 .DrawerArea {
   position: relative;
-  background-color: color-placeholder;
+  background-color: colorPlaceholder;
 }

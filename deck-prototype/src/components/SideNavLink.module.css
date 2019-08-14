@@ -1,5 +1,5 @@
-@value variables: "./_variables.css";
-@value gradient-hover, color-bg, color-header--dark, mobile from variables;
+@value variables: "./_variables.module.css";
+@value gradientHover, color-bg, colorHeader--dark, mobile from variables;
 
 
 .SideNavLink {
@@ -19,7 +19,7 @@
 }
 
 .active .name {
-  color: color-header--dark;
+  color: colorHeader--dark;
 }
 
 .SideNavLink:focus {
@@ -27,7 +27,7 @@
 }
 
 .SideNavLink:hover {
-  background-image: gradient-hover;
+  background-image: gradientHover;
   text-decoration: none;
 }
 

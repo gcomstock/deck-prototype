@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   height: auto; /* override */
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -68,7 +68,7 @@ span {
 .verPill {
   display: inline-block;
   border-radius: 16px;
-  padding: 1px 6px;
+  padding: 1px 7px;
   font-size: 10px;
   font-weight: 600;
   color: #fff;

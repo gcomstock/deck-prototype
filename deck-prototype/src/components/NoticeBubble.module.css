@@ -1,5 +1,5 @@
-@value variables: "./_variables.css";
-@value color--warn, color--exception from variables;
+@value variables: "./_variables.module.css";
+@value colorWarn, colorException from variables;
 
 
 .NoticeBubble {
@@ -15,7 +15,7 @@
 }
 
 .NoticeBubble.warning {
-  background-color: color--warn;
+  background-color: colorWarn;
   animation: noticeStrobe 4s linear;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .iconContainer.warning {
-  background-color: color--exception;
+  background-color: colorException;
   border-radius: 48px;
   color: #ffffff;
 }
@@ -43,9 +43,9 @@
 
 @keyframes noticeStrobe {
   0% { background-color: transparent; }
-  20% { background-color: color--warn; }
+  20% { background-color: colorWarn; }
   40% { background-color: transparent; }
-  60% { background-color: color--warn; }
+  60% { background-color: colorWarn; }
   80% { background-color: transparent; }
-  100% { background-color: color--warn; }
+  100% { background-color: colorWarn; }
 }

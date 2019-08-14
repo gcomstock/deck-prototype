@@ -1,9 +1,15 @@
 import React from 'react';
-import styles from './FunctionRow.module.css';
 import { Link } from 'react-router-dom';
+import Sticky from './Sticky';
+import classNames from 'classnames';
+
+import cssFunctionRow from './FunctionRow.module.css';
+import cssVariables from './_variables.module.css';
+
+let styles = {};
+Object.assign(styles, cssFunctionRow, cssVariables);
 
 
-//<Link to={`${this.props.match.url}/functionName`}>a function</Link>
 
 export default class FunctionRow extends React.Component {
   constructor(props) {
@@ -20,33 +26,61 @@ export default class FunctionRow extends React.Component {
   }
 
   render() {
+    const mainRowClasses = classNames(styles.mainRow, {
+      [styles.mainRowExpanded]: this.state.isExpanded
+    });
+
+    console.log('styles.colorBg '+ styles.colorBg);
+
     return (
       <div className={styles.FunctionRow}>
-        <div className={styles.mainRow}>
-          <i className="ico icon-lambda"/>
-          US-WEST-1   |   FunctionNameA
-        </div>
 
-        <Link to={`${this.props.match.url}/functionName`} className={styles.version}>
-          <div>v058</div>
-          <div>$PROD</div>
-          <div></div>
-          <div></div>
-        </Link>
+        <Sticky top="132px" mobileTop="88px" isMobile={this.props.isMobile} backgroundColor={styles.colorBg}>
 
-        <Link to={`${this.props.match.url}/functionName`} className={styles.version}>
-          <div>v058</div>
-          <div>$PROD</div>
-          <div></div>
-          <div></div>
-        </Link>
+          <div className={mainRowClasses} onClick={this.toggleExpandedState}>
+            <span className={styles.iconContainer}>
+              <i className="ico icon-lambda"/>
+            </span>
 
-        <Link to={`${this.props.match.url}/functionName`} className={styles.version}>
-          <div>v058</div>
-          <div>$PROD</div>
-          <div></div>
-          <div></div>
-        </Link>
+            <span className={styles.functionName}>
+              US-WEST-1 <span className={styles.divider}>|</span> FunctionNameA
+            </span>
+
+            <span className={styles.iconContainer}>
+              { this.state.isExpanded
+                ? <i className="ico icon-arrow-expanded"/>
+                : <i className="ico icon-arrow-collapsed"/>
+              }
+            </span>
+          </div>
+
+        </Sticky>
+
+
+        {this.state.isExpanded &&
+          <>
+            <Link to={`${this.props.match.url}/functionName`} className={styles.version}>
+              <div><span className="verPill">v058</span></div>
+              <div>$PROD</div>
+              <div></div>
+              <div></div>
+            </Link>
+
+            <Link to={`${this.props.match.url}/functionName`} className={styles.version}>
+              <div><span className="verPill">v057</span></div>
+              <div>$PROD</div>
+              <div></div>
+              <div></div>
+            </Link>
+
+            <Link to={`${this.props.match.url}/functionName`} className={styles.version}>
+              <div><span className="verPill">v056</span></div>
+              <div>$PROD</div>
+              <div></div>
+              <div></div>
+            </Link>
+          </>
+        }
 
 
       </div>

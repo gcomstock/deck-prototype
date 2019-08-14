@@ -1,8 +1,8 @@
-@value variables: "./_variables.css";
-@value color-placeholder, mobile from variables;
+@value variables: "./_variables.module.css";
+@value colorPlaceholder, mobile from variables;
 
 .ContentArea {
-  background-color: color-placeholder;
+  background-color: colorPlaceholder;
   margin: 0 16px;
   display: flex;
   flex: 1 1 100%;
@@ -16,5 +16,5 @@
 }
 
 .content {
-  background-color: color-placeholder;
+  background-color: colorPlaceholder;
 }

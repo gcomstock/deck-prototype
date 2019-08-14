@@ -1,5 +1,5 @@
-@value variables: "./_variables.css";
-@value header-height, color-header, gradient-hover, mobile from variables;
+@value variables: "./_variables.module.css";
+@value headerHeight, colorHeader, gradientHover, mobile from variables;
 
 
 .Header {
@@ -7,16 +7,16 @@
   width: 100%;
   top: 0;
   left: 0;
-  height: header-height;
-  background-color: color-header;
+  height: headerHeight;
+  background-color: colorHeader;
   display: flex;
   align-items: center;
-  z-index: 21;
+  z-index: 8000;
 }
 
 .menuButton {
-  flex: 0 0 header-height;
-  height: header-height;
+  flex: 0 0 headerHeight;
+  height: headerHeight;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
 }
 
 .menuButton:hover {
-  background-image: gradient-hover;
+  background-image: gradientHover;
 }
 
 .logo {
@@ -53,7 +53,7 @@
 
 .logo:hover {
   color: #fff;
-  background-image: gradient-hover;
+  background-image: gradientHover;
 }
 
 @media mobile {

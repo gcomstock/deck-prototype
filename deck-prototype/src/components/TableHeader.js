@@ -10,6 +10,8 @@ Object.assign(styles, header, layouts);
 export default class TableHeader extends React.Component {
   constructor(props) {
     super(props);
+
+
   }
 
   render() {
@@ -21,6 +23,10 @@ export default class TableHeader extends React.Component {
       [styles[this.props.layout]]: this.props.layout
     });
 
+    const sortClasses = classNames(styles.sortArrow, {
+      [styles.sortArrowDescending]: true //stub
+    })
+
     const tableTop = this.props.top || '0';
 
     return (
@@ -28,7 +34,15 @@ export default class TableHeader extends React.Component {
 
         <div className={headerClasses}>
           {this.props.columns.map((column) => {
-            return <div>{column}</div>
+
+            if (column.isSortable) {
+              return (
+                <div className={styles.sortable}>
+                  {column.title}<span className={sortClasses}/>
+                </div>
+              )
+            }
+            return <div>{column.title}</div>
           })}
 
           {this.props.toggleAll &&

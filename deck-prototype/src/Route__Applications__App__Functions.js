@@ -7,15 +7,30 @@ import DrawerArea from './components/DrawerArea';
 import BreadCrumb from './components/BreadCrumb';
 import RuledSubHeader from './components/RuledSubHeader';
 import FunctionRow from './components/FunctionRow';
-
 import TableHeader from './components/TableHeader';
+import Sticky from './components/Sticky';
 
 import Route__Applications__App__Functions__Function from './Route__Applications__App__Functions__Function';
-
 
 // we define the drawer width here instead of each drawer route, so we can create a layout that gives room for the right drawer size on large screens.
 const DRAWER_WIDTH = '480px';
 const CONTENT_WIDTH = '1208px';
+
+
+const stubbedColumns = [
+  {
+    title: ''
+  },
+  {
+    title: 'Alias'
+  },
+  {
+    title: 'Exceptions'
+  },
+  {
+    title: 'Invokes'
+  }
+];
 
 
 export default class Route__App__Functions extends React.Component {
@@ -35,24 +50,47 @@ export default class Route__App__Functions extends React.Component {
           <BreadCrumb path="Functions"/>
 
 
+          <TableHeader
+            isMobile={this.props.isMobile}
+            columns={stubbedColumns}
+            layout="Functions"
+            top="48px"
+          />
+
           <div style={{position: 'relative'}}>
-
-            <TableHeader
-              columns={['','Alias','Exceptions','Invokes']}
-              layout="Functions"
-              top="48px"
-              leftSpacer="80px"
-            />
-
-            <RuledSubHeader text="MY-AWS-ACCOUNT" />
-
-
-            <FunctionRow  {...this.props} />
-            <FunctionRow  {...this.props} />
-            <FunctionRow  {...this.props} />
-            <FunctionRow  {...this.props} />
-
+            <RuledSubHeader
+              text="MY-AWS-ACCOUNT"
+              top="96px"
+              mobileTop="48px"
+              isSticky={true}
+              isMobile={this.props.isMobile}
+              backgroundColor="#f5f5f5"
+              canToggle={true}
+            >
+              <FunctionRow {...this.props} />
+              <FunctionRow {...this.props} />
+              <FunctionRow {...this.props} />
+              <FunctionRow {...this.props} />
+            </RuledSubHeader>
           </div>
+
+          <div style={{position: 'relative'}}>
+            <RuledSubHeader
+              text="MY-OTHER-AWS-ACCOUNT"
+              top="96px"
+              mobileTop="48px"
+              isSticky={true}
+              isMobile={this.props.isMobile}
+              backgroundColor="#f5f5f5"
+              canToggle={true}
+            >
+              <FunctionRow {...this.props} />
+              <FunctionRow {...this.props} />
+              <FunctionRow {...this.props} />
+              <FunctionRow {...this.props} />
+            </RuledSubHeader>
+          </div>
+
 
 
         </ContentArea>

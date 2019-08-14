@@ -1,9 +1,9 @@
-@value variables: "./_variables.css";
-@value header-height from variables;
+@value variables: "./_variables.module.css";
+@value headerHeight from variables;
 
 
 .Body {
-  margin-top: header-height;
+  margin-top: headerHeight;
   display: flex;
   justify-content: space-between;
   width: 100%;

@@ -1,11 +1,11 @@
-@value variables: "./_variables.css";
-@value header-height, gradient-hover, mobile from variables;
+@value variables: "./_variables.module.css";
+@value headerHeight, gradientHover, mobile from variables;
 
 
 .Drawer {
   position: fixed;
-  z-index: 10;
-  top: header-height;
+  z-index: 600;
+  top: headerHeight;
   bottom: 0;
   right: 0;
 
@@ -104,7 +104,7 @@
   color: #fff;
 }
 .headerClose:hover {
-  background-image: gradient-hover;
+  background-image: gradientHover;
 }
 
 .body {

@@ -1,27 +1,54 @@
-@value variables: "./_variables.css";
-@value color-placeholder, gradient-hover from variables;
+@value variables: "./_variables.module.css";
+@value colorPlaceholder, gradientHover from variables;
 
 
+.FunctionRow {
+  position: relative;
+}
 
 .FunctionRow:last-child {
   margin-bottom: 64px;
 }
 
-
 .mainRow {
   display: flex;
-  background-color: #e2e2e2;
-  height: 48px;
-  margin-bottom: 8px;
-  margin-left: 40px;
   align-items: center;
+  background-color: #e0e0e0;
+  height: 48px;
+  margin: 0 0 1px 40px;
   padding-left: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
+  cursor: pointer;
+}
+
+.mainRow:hover {
+  background-image: gradientHover;
+}
+
+.mainRowExpanded {
+  margin: 0 0 4px 40px;
+}
+
+.iconContainer {
+  margin-right: 8px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  flex: 0 0 24px;
+}
+
+.functionName {
+  flex: 1 1 100%;
+}
+
+.divider {
+  margin: 0 8px;
+  color: #999;
 }
 
 
-.trafficSplit {
-  width: 40px;
-}
 
 
 .version {
@@ -30,17 +57,27 @@
   height: 48px;
   background-color: #e8e8e8;
   margin-bottom: 1px;
-
-  padding: 0 16px;
   font-size: 14px;
   font-weight: 700;
   color: #666666;
 }
 
-.version:hover {
-  background-image: gradient-hover;
+
+
+.version > div:first-child {
+  padding-left: 16px;
 }
 
+
+
+.version:hover {
+  background-image: gradientHover;
+}
+
+
+.version:first-child {
+  margin-top: 8px;
+}
 .version:last-child {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }

@@ -1,8 +1,8 @@
-@value variables: "./_variables.css";
-@value color-header, mobile from variables;
+@value variables: "./_variables.module.css";
+@value colorHeader, mobile from variables;
 
 .BreadCrumb {
-  color: color-header;
+  color: colorHeader;
   font-size: 24px;
   margin: 16px 0;
   text-align: center;

@@ -1,4 +1,4 @@
-@value variables: "./_variables.css";
+@value variables: "./_variables.module.css";
 @value mobile from variables;
 
 
@@ -9,7 +9,8 @@
 .ManagedDeliveryHistory > div {
    display: flex;
    align-items: center;
-   margin-right: 16px;
+   /*margin-right: 16px;*/
+  padding-left: 16px;
  }
 
 .ManagedDeliveryHistory > div:nth-child(1) {
@@ -26,7 +27,8 @@
   justify-content: center;
 }
 .ManagedDeliveryHistory > div:last-child {
-  margin-right: 0;
+  /*margin-right: 0;*/
+  padding-left: 0;
 }
 
 
@@ -68,7 +70,7 @@
   margin-right: 16px;
 }
 .Functions > div:nth-child(1) {
-  flex: 1 1 288px;
+  flex: 1 1 200px;
 }
 .Functions > div:nth-child(2) {
   flex: 1 1 200px;

@@ -1,0 +1,48 @@
+@value color-bg: #ffffff;
+
+
+@value colorBg: #ffffff;
+
+
+
+
+@value colorHeader: #31556C;
+@value colorHeader--light: #647D92;
+@value colorHeader--xlight: #afbec8;
+@value colorHeader--dark: #1e3c5a;
+
+
+@value colorSubheader: #555;
+
+
+@value colorWarn: #ffeba0;
+@value colorException: #ff8282;
+
+@value gradientHover: linear-gradient(to bottom, rgba(160,180,220,0.25), rgba(160,180,220,0.25));
+
+
+@value hover: background-image: linear-gradient(to bottom, rgba(160,180,220,0.25), rgba(160,180,220,0.25));
+
+
+@value headerHeight: 48px;
+
+
+@value colorTextMid: #444444;
+@value colorTableRowMid: #e8e8e8;
+
+
+
+
+/*@value colorPlaceholder: rgba(0,0,0,0.1);*/
+@value colorPlaceholder: transparent;
+
+
+
+@value shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+@value shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+@value shadow3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+@value shadow4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+@value shadow5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+
+@value mobile: screen and (max-width: 1024px);

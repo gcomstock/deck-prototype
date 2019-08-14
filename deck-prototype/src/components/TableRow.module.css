@@ -1,5 +1,5 @@
-@value variables: "./_variables.css";
-@value gradient-hover, color-bg, color--tablerow--mid, gradient-hover, color--text--mid, color-header--dark, mobile, shadow-1 from variables;
+@value variables: "./_variables.module.css";
+@value gradientHover, color-bg, colorTableRowMid, gradientHover, colorTextMid, colorHeader--dark, mobile, shadow1 from variables;
 
 
 .TableRow:last-child {
@@ -14,12 +14,13 @@
   overflow: hidden;
   align-items: center;
   font-size: 13px;
-  padding: 8px 16px;
+  /*padding: 8px 16px;*/
+  padding: 8px 0;
   flex-wrap: wrap;
 }
 
 .mainRow:hover {
-  background-image: gradient-hover;
+  background-image: gradientHover;
 }
 @media mobile {
   .mainRow {
@@ -40,14 +41,14 @@
   z-index: 1;
 }
 .expanded:hover {
-  background-image: gradient-hover;
+  background-image: gradientHover;
 }
 @media mobile {
   .expanded {
     position: static;
     margin: 16px 0 0 0;
     padding-left: 6px; /*for border */
-    border-left: 2px solid color-header--dark;
+    border-left: 2px solid colorHeader--dark;
     border-bottom: none;
   }
   .expanded:hover {
@@ -67,7 +68,7 @@
 }
 @media mobile {
   .subContainer {
-    border-left: 2px solid color-header--dark;
+    border-left: 2px solid colorHeader--dark;
   }
 }
 
@@ -75,7 +76,7 @@
   flex: 0 0 100%;
   font-weight: 900;
   margin-top: 8px;
-  color: color-header--dark;
+  color: colorHeader--dark;
 }
 
 .mobileContent {
