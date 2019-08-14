@@ -5,7 +5,6 @@ import classNames from 'classnames';
 
 import cssFunctionRow from './FunctionRow.module.css';
 import cssVariables from './_variables.module.css';
-
 let styles = {};
 Object.assign(styles, cssFunctionRow, cssVariables);
 
@@ -29,8 +28,6 @@ export default class FunctionRow extends React.Component {
     const mainRowClasses = classNames(styles.mainRow, {
       [styles.mainRowExpanded]: this.state.isExpanded
     });
-
-    console.log('styles.colorBg '+ styles.colorBg);
 
     return (
       <div className={styles.FunctionRow}>

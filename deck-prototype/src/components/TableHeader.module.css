@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value gradientHover, colorHeader, colorHeaderDark, colorSubheader, colorBg, mobile from variables;
+@value gradientHover, colorHeader, colorHeaderDark, colorSubHeader, colorBg, mobile from variables;
 
 
 .headerContainer {

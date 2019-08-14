@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value colorPlaceholder, gradientHover from variables;
+@value colorMainRow, colorSubRow, gradientHover from variables;
 
 
 .FunctionRow {
@@ -13,7 +13,7 @@
 .mainRow {
   display: flex;
   align-items: center;
-  background-color: #e0e0e0;
+  background-color: colorMainRow;
   height: 48px;
   margin: 0 0 1px 40px;
   padding-left: 8px;
@@ -55,28 +55,17 @@
   composes: Functions from "./TableLayouts.module.css";
 
   height: 48px;
-  background-color: #e8e8e8;
+  background-color: colorSubRow;
   margin-bottom: 1px;
   font-size: 14px;
   font-weight: 700;
   color: #666666;
 }
-
-
-
 .version > div:first-child {
   padding-left: 16px;
 }
-
-
-
 .version:hover {
   background-image: gradientHover;
-}
-
-
-.version:first-child {
-  margin-top: 8px;
 }
 .version:last-child {
   margin-bottom: 32px;

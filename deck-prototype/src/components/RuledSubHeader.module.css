@@ -1,12 +1,12 @@
 @value variables: "./_variables.module.css";
-@value gradientHover from variables;
+@value colorSubHeader, gradientHover from variables;
 
 
 .RuledSubHeader {
   font-size: 18px;
   font-weight: 600;
-  color: #777;
-  border-bottom: 1px solid #777;
+  color: colorSubHeader;
+  border-bottom: 1px solid colorSubHeader;
   padding: 8px 8px 0;
   margin-bottom: 8px;
   margin-top: 24px;

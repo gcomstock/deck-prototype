@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value colorHeader, colorSubheader, colorBg, headerHeight, shadow4, mobile from variables;
+@value colorHeader, colorSubHeaderDark, colorBg, headerHeight, shadow4, mobile from variables;
 
 
 .SideNav {
@@ -81,9 +81,9 @@
 .tinyTitle {
   text-transform: uppercase;
   font-size: 14px;
-  color: colorSubheader;
+  color: colorSubHeaderDark;
   font-weight: 600;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid colorSubHeaderDark;
   padding: 0 8px 0 16px;
   line-height: 24px;
   margin: 16px 0 8px;

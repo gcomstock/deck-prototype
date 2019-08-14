@@ -12,6 +12,10 @@ import Sticky from './components/Sticky';
 
 import Route__Applications__App__Functions__Function from './Route__Applications__App__Functions__Function';
 
+
+import styles from './components/_variables.module.css';
+
+
 // we define the drawer width here instead of each drawer route, so we can create a layout that gives room for the right drawer size on large screens.
 const DRAWER_WIDTH = '480px';
 const CONTENT_WIDTH = '1208px';
@@ -64,7 +68,7 @@ export default class Route__App__Functions extends React.Component {
               mobileTop="48px"
               isSticky={true}
               isMobile={this.props.isMobile}
-              backgroundColor="#f5f5f5"
+              backgroundColor={styles.colorBg}
               canToggle={true}
             >
               <FunctionRow {...this.props} />
@@ -76,12 +80,12 @@ export default class Route__App__Functions extends React.Component {
 
           <div style={{position: 'relative'}}>
             <RuledSubHeader
-              text="MY-OTHER-AWS-ACCOUNT"
+              text="MY-AWS-ACCOUNT"
               top="96px"
               mobileTop="48px"
               isSticky={true}
               isMobile={this.props.isMobile}
-              backgroundColor="#f5f5f5"
+              backgroundColor={styles.colorBg}
               canToggle={true}
             >
               <FunctionRow {...this.props} />

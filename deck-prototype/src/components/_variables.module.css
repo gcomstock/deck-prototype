@@ -1,18 +1,22 @@
-@value colorBg: #ffffff;
+@value colorBgEmphasis: #ffffff;
+@value colorBg: #f7f7f7;
+@value colorMainRow: #e7e7e7;
+@value colorSubRow: #ececec;
+
+/*@value colorBgEmphasis: #f7f7f7;*/
+/*@value colorBg: #ffffff;*/
+/*@value colorMainRow: #eeeeee;*/
+/*@value colorSubRow: #f4f4f4;*/
 
 
-@value colorBg: #ffffff;
-
-
-
-
-@value colorHeader: #31556C;
-@value colorHeaderLight: #647D92;
 @value colorHeaderXlight: #afbec8;
+@value colorHeaderLight: #647d92;
+@value colorHeader: #31556c;
 @value colorHeaderDark: #1e3c5a;
 
 
-@value colorSubheader: #555;
+@value colorSubHeader: #666;
+@value colorSubHeaderDark: #444;
 
 
 @value colorWarn: #ffeba0;
