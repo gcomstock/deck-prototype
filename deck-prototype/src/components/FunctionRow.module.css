@@ -1,34 +1,46 @@
 @value variables: "./_variables.module.css";
-@value colorSubHeader, colorSubHeaderLight, colorMainRow, colorSubRow, gradientHover from variables;
+@value webRowHeight, colorSubHeader, colorSubHeaderLight, colorMainRow, colorSubRow, gradientHover, mobile from variables;
 
 
 .FunctionRow {
   position: relative;
 }
-
 .FunctionRow:last-child {
   margin-bottom: 64px;
 }
+@media mobile {
+  .FunctionRow {
+    margin-left: 0;
+  }
+}
+
 
 .mainRow {
   display: flex;
   align-items: center;
   background-color: colorMainRow;
-  height: 48px;
-  margin: 0 0 1px 40px;
+  height: webRowHeight;
+  margin-bottom: 1px;
+  margin-left: 40px;
   padding-left: 8px;
   font-size: 14px;
   font-weight: 700;
   color: colorSubHeader;
   cursor: pointer;
 }
-
 .mainRow:hover {
   background-image: gradientHover;
 }
+@media mobile {
+  .mainRow {
+    height: 48px;
+    margin-left: 0;
+  }
+}
+
 
 .mainRowExpanded {
-  margin: 0 0 4px 40px;
+  margin-bottom: 4px;
 }
 
 .iconContainer {
@@ -54,12 +66,12 @@
 .version {
   composes: Functions from "./TableLayouts.module.css";
 
-  height: 48px;
+  height: webRowHeight;
   background-color: colorSubRow;
   margin-bottom: 1px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  color: #666666;
+  color: colorSubHeader;
 }
 .version > div:first-child {
   padding-left: 16px;
@@ -69,4 +81,9 @@
 }
 .version:last-child {
   margin-bottom: 32px;
+}
+@media mobile {
+  .version {
+    height: 48px;
+  }
 }

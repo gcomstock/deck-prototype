@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value gradientHover, colorBg, colorSubHeaderLight, colorBgEmphasis, colorTableRowMid, gradientHover, colorTextMid, colorHeaderDark, mobile, shadow1 from variables;
+@value webRowHeight, gradientHover, colorBg, colorSubHeaderLight, colorBgEmphasis, colorTableRowMid, gradientHover, colorTextMid, colorHeaderDark, mobile, shadow1 from variables;
 
 
 .TableRow:last-child {
@@ -9,7 +9,7 @@
 .mainRow {
   composes: ManagedDeliveryHistory from "./TableLayouts.module.css";
 
-  min-height: 48px;
+  min-height: webRowHeight;
   cursor: pointer;
   overflow: hidden;
   align-items: center;

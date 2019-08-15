@@ -70,7 +70,7 @@
   margin-right: 16px;
 }
 .Functions > div:nth-child(1) {
-  flex: 1 1 200px;
+  flex: 0 1 160px;
 }
 .Functions > div:nth-child(2) {
   flex: 1 1 200px;
@@ -88,9 +88,7 @@
 
 @media mobile {
   .Functions {
-    /*padding: 0 0 26px 0;*/
-    /*margin: 16px 0;*/
-    /*border-bottom: 1px solid #ccc;*/
+    margin-left: 16px;
   }
   .Functions > div {
     flex-wrap: wrap;

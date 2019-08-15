@@ -29,10 +29,10 @@ const stubbedColumns = [
     title: 'Alias'
   },
   {
-    title: 'Exceptions'
+    title: 'Invokes'
   },
   {
-    title: 'Invokes'
+    title: ''
   }
 ];
 
