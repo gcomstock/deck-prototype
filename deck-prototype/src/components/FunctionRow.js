@@ -44,6 +44,16 @@ export default class FunctionRow extends React.Component {
             </span>
 
             <span className={styles.iconContainer}>
+              <Link to={`${this.props.match.url}/functionName`}>
+                <i className="ico ico-btn icon-load-balancer"/>
+              </Link>
+            </span>
+
+            <span className={styles.iconContainer}>
+              <i className="ico ico-btn icon-menu-kebab"/>
+            </span>
+
+            <span className={styles.iconContainer}>
               { this.state.isExpanded
                 ? <i className="ico icon-arrow-expanded"/>
                 : <i className="ico icon-arrow-collapsed"/>
