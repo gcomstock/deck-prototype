@@ -34,7 +34,10 @@ export default class FunctionRow extends React.Component {
 
         <Sticky top="132px" mobileTop="88px" isMobile={this.props.isMobile} backgroundColor={styles.colorBg}>
 
-          <div className={mainRowClasses} onClick={this.toggleExpandedState}>
+          <div className={mainRowClasses}>
+            <div className={styles.mainRowClicker} onClick={this.toggleExpandedState}/>
+
+
             <span className={styles.iconContainer}>
               <i className="ico icon-lambda"/>
             </span>
@@ -43,13 +46,13 @@ export default class FunctionRow extends React.Component {
               US-WEST-1 <span className={styles.divider}>|</span> FunctionNameA
             </span>
 
-            <span className={styles.iconContainer}>
+            <span className={styles.buttonContainer}>
               <Link to={`${this.props.match.url}/functionName`}>
                 <i className="ico ico-btn icon-load-balancer"/>
               </Link>
             </span>
 
-            <span className={styles.iconContainer}>
+            <span className={styles.buttonContainer}>
               <i className="ico ico-btn icon-menu-kebab"/>
             </span>
 

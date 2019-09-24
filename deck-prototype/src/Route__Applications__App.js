@@ -22,7 +22,6 @@ export default class Route__App extends React.Component {
 
         <ContentArea drawerWidth={DRAWER_WIDTH} contentWidth={CONTENT_WIDTH}>
           <h1>App Home</h1>
-          <h4>(not a real route for now)</h4>
         </ContentArea>
       </Body>
     )

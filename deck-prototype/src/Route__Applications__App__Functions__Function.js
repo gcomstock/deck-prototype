@@ -24,8 +24,6 @@ export default class Route__App__Functions__Function extends React.Component {
       >
         <NoticeBubble icon="warn-diamond" noticeType="warning" />
 
-        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>
-        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>        <h1>hi</h1>
       </Drawer>
     )
   }

@@ -27,10 +27,10 @@
   font-weight: 700;
   color: colorSubHeader;
   cursor: pointer;
+
+  position: relative;
 }
-.mainRow:hover {
-  background-image: gradientHover;
-}
+
 @media mobile {
   .mainRow {
     height: 48px;
@@ -39,16 +39,44 @@
 }
 
 
+.mainRowClicker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.mainRowClicker:hover {
+  background-image: gradientHover;
+}
+
+
+
+
+
+
+
 .mainRowExpanded {
   margin-bottom: 4px;
 }
 
+/* used with lambda and carrot icons */
 .iconContainer {
   margin-right: 8px;
   color: colorSubHeaderLight;
   display: flex;
   align-items: center;
   flex: 0 0 24px;
+}
+
+.buttonContainer {
+  /*padding: 4px;*/
+  /*display: flex;*/
+  align-items: center;
+  flex: 1 0 auto;
+
+  position: relative;
+  z-index: 1;
 }
 
 .functionName {
