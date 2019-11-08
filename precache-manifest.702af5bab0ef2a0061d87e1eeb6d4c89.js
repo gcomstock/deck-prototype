@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a9e8ad8bc9b64742a19b2d6c75f09df",
+    "revision": "885c1de297fda2e7ddae64e9692bdd26",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "e0481392c9c279618e5f",
+    "revision": "7cc69278c422edcc7044",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "8a4a43fc43804775d631",
-    "url": "/deck-prototype/static/css/main.c17c76fa.chunk.css"
+    "revision": "05886583f5221a401a16",
+    "url": "/deck-prototype/static/css/main.4edaa5d4.chunk.css"
   },
   {
-    "revision": "e0481392c9c279618e5f",
-    "url": "/deck-prototype/static/js/2.2b66eb26.chunk.js"
+    "revision": "7cc69278c422edcc7044",
+    "url": "/deck-prototype/static/js/2.df78d736.chunk.js"
   },
   {
-    "revision": "8a4a43fc43804775d631",
-    "url": "/deck-prototype/static/js/main.beacaa8c.chunk.js"
+    "revision": "05886583f5221a401a16",
+    "url": "/deck-prototype/static/js/main.f1dd19dc.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
@@ -216,19 +216,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deck-prototype/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2"
   },
   {
-    "revision": "3b311436a40f418b2fe972029bbdd0f2",
-    "url": "/deck-prototype/static/media/icomoon.3b311436.svg"
+    "revision": "3500f7367f1182da118eaee66c2f0869",
+    "url": "/deck-prototype/static/media/icomoon.3500f736.svg"
   },
   {
-    "revision": "6993f3a18ec8eeff064ba887f2483b82",
-    "url": "/deck-prototype/static/media/icomoon.6993f3a1.woff2"
+    "revision": "733f97f33bf05696bd3750de52f52273",
+    "url": "/deck-prototype/static/media/icomoon.733f97f3.woff"
   },
   {
-    "revision": "b3b961886d31a9696857a5f8a2d53781",
-    "url": "/deck-prototype/static/media/icomoon.b3b96188.ttf"
+    "revision": "9a80eb051652df84567053e9978e0ac3",
+    "url": "/deck-prototype/static/media/icomoon.9a80eb05.ttf"
   },
   {
-    "revision": "d4ffeb7c42bb030e54e139846fcf5275",
-    "url": "/deck-prototype/static/media/icomoon.d4ffeb7c.woff"
+    "revision": "f0ebf97ea934793d343e0fa470997672",
+    "url": "/deck-prototype/static/media/icomoon.f0ebf97e.woff2"
   }
 ]);
