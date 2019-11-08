@@ -18,11 +18,11 @@ export default class Route__App extends React.Component {
   render() {
     return (
       <Body>
-        <SideNav isMobile={this.props.isMobile} isSideNavOpen={this.props.isSideNavOpen} isAppPath={this.props.isAppPath} />
+      <SideNav isMobile={this.props.isMobile} isSideNavOpen={this.props.isSideNavOpen} isAppPath={this.props.isAppPath} />
 
-        <ContentArea drawerWidth={DRAWER_WIDTH} contentWidth={CONTENT_WIDTH}>
-          <h1>App Home</h1>
-        </ContentArea>
+      <ContentArea drawerWidth={DRAWER_WIDTH} contentWidth={CONTENT_WIDTH}>
+        <h1>App Home</h1>
+      </ContentArea>
       </Body>
     )
   }

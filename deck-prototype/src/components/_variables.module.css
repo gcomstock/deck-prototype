@@ -8,6 +8,9 @@
 @value colorMainRow: #e7e7e7; /* x-light */
 @value colorSubRow: #ececec;
 
+
+@value colorRowRule: #cccccc;
+
 /*@value colorBgEmphasis: #f7f7f7;*/
 /*@value colorBg: #ffffff;*/
 /*@value colorMainRow: #eeeeee;*/
@@ -24,8 +27,9 @@
 @value colorSubHeaderDark: #444;
 
 
+@value colorInfo: #61b9ff;
 @value colorWarn: #ffeba0;
-@value colorException: #ff8282;
+@value colorError: #ff8282;
 
 
 @value colorButtonPrimary: #149CB5;

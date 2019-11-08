@@ -6,17 +6,25 @@ import ContentArea from './components/ContentArea';
 import DrawerArea from './components/DrawerArea';
 import Drawer from './components/Drawer';
 import BreadCrumb from './components/BreadCrumb';
+import { OptionsList, Checkbox } from './components/InfraRow';
+
+import { mockInfra } from './mockdata/infra';
 
 
 const DRAWER_WIDTH = '0';
-const CONTENT_WIDTH = '800px';
+const CONTENT_WIDTH = '1200px';
 
 
 export default class Route__App__Clusters extends React.Component {
   constructor(props) {
     super(props);
     props.setIsAppPath(true);
+
+    this.state = {
+      selectedOptions: {}
+    };
   }
+
 
   render() {
     return (
@@ -25,6 +33,11 @@ export default class Route__App__Clusters extends React.Component {
 
         <ContentArea drawerWidth={DRAWER_WIDTH} contentWidth={CONTENT_WIDTH}>
           <BreadCrumb path="Clusters"/>
+
+          <OptionsList
+            mockInfra={mockInfra}
+            currentUrl={this.props.match.url}
+          />
         </ContentArea>
 
         <DrawerArea drawerWidth={DRAWER_WIDTH}>

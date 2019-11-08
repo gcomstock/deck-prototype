@@ -1,0 +1,75 @@
+@value variables: "./_variables.module.css";
+@value webRowHeight, colorRowRule, gradientHover, mobile from variables;
+
+
+.indent {
+  margin: 0 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.InfraRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  border-bottom: 1px solid colorRowRule;
+  height: webRowHeight;
+
+  padding: 0 8px;
+  position: relative;
+
+  font-weight: 700;
+  font-size: 14px;
+  color: #666666;
+
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*white-space: nowrap;*/
+  /*width: 100%;*/
+}
+
+.InfraRow:hover {
+  background-image: gradientHover;
+}
+
+
+
+.wrap ul a:first-child {
+  background-color: red;
+}
+
+
+/*.mainClickArea {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*height: 100%;*/
+  /*width: 100%;*/
+/*}*/
+/*.mainClickArea:hover {*/
+  /*background-image: gradientHover;*/
+/*}*/
+
+
+.leftCol {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.centerCol {
+  flex: 0 0 400px;
+  display: flex;
+  align-items: center;
+}
+
+.rightCol {
+  flex: 0 0 400px;
+  display: flex;
+  align-items: center;
+}

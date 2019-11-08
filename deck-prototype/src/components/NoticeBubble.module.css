@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value colorWarn, colorException from variables;
+@value colorWarn, colorError from variables;
 
 
 .NoticeBubble {
@@ -30,7 +30,7 @@
 }
 
 .iconContainer.warning {
-  background-color: colorException;
+  background-color: colorError;
   border-radius: 48px;
   color: #ffffff;
 }
