@@ -6,7 +6,7 @@ import ContentArea from './components/ContentArea';
 import DrawerArea from './components/DrawerArea';
 import Drawer from './components/Drawer';
 import BreadCrumb from './components/BreadCrumb';
-import { OptionsList, Checkbox } from './components/InfraRow';
+import { ObjectRow } from './components/ObjectRow';
 
 import { mockInfra } from './mockdata/infra';
 
@@ -34,7 +34,7 @@ export default class Route__App__Clusters extends React.Component {
         <ContentArea drawerWidth={DRAWER_WIDTH} contentWidth={CONTENT_WIDTH}>
           <BreadCrumb path="Clusters"/>
 
-          <OptionsList
+          <ObjectRow
             mockInfra={mockInfra}
             currentUrl={this.props.match.url}
           />
