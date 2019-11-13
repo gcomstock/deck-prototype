@@ -9,6 +9,7 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  margin: 8px 0;
 }
 
 .Button:nth-child(n+2) {

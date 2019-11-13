@@ -45,7 +45,7 @@
 
 
 .header {
-  flex: 0 0 56px;
+  flex: 1 0 56px;
   background-color: colorHeader;
   color: #fff;
   justify-content: center;
@@ -86,13 +86,6 @@
   overflow: hidden;
   padding: 0 16px;
 }
-@media mobile {
-  .footer {
-    flex: 0 0 48px;
-    padding: 0 12px;
-  }
-}
-
 .footerLeft {
   flex: 1 1 100%;
   margin-right: 16px;
@@ -102,9 +95,22 @@
 .footerRight {
   flex: 1 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
+
+@media mobile {
+  .footer {
+    flex: 0 0 100%;
+    padding: 0 12px;
+    flex-wrap: wrap;
+  }
+  .footerLeft {
+    text-align: center;
+    margin: 8px 0;
+  }
+}
+
+
 
 
 .title {
