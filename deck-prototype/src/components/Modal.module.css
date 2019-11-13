@@ -45,7 +45,7 @@
 
 
 .header {
-  flex: 1 0 56px;
+  flex: 1 0 auto;
   background-color: colorHeader;
   color: #fff;
   justify-content: center;
@@ -53,14 +53,14 @@
   align-items: center;
 }
 @media mobile {
-  .header {
-    flex: 0 0 48px;
-  }
+  /*.header {*/
+    /*flex: 1 0 48px;*/
+  /*}*/
 }
 
 
 .body {
-  flex: 1 1 100%;
+  flex: 1 1 auto;
   overflow: scroll;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;

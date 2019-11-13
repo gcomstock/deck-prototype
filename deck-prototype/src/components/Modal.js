@@ -45,7 +45,7 @@ export default class Modal extends React.Component {
 
           <div className={styles.footer}>
             <div className={styles.footerLeft}>
-              pagination or wizard steps here
+              pagination or wizard steps here (dont render .footerLeft if not provided)
             </div>
             <div className={styles.footerRight}>
               <Button text="Confirm" icon="cluster"/>
