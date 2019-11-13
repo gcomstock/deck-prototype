@@ -13,7 +13,6 @@
   align-items: center;
   top: 0;
   left: 0;
-
   overflow: hidden;
   overscroll-behavior: none;
 }
@@ -25,16 +24,14 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
   width: calc(100% - 64px);
   max-width: 1400px;
-
   max-height: calc(100% - 64px);
-
+  min-height: 320px;
 }
 @media mobile {
   .frame {
-    max-height: calc(100% - 48px);
+    max-height: calc(100% - 32px);
     width: calc(100% - 24px);
   }
 }
@@ -43,7 +40,6 @@
 @media screen and (min-height: 1164px) {
   .frame {
     max-height: 1100px;
-    min-height: 400px;
   }
 }
 
@@ -82,25 +78,45 @@
   flex: 0 0 64px;
   background-color: #fff;
   color: #fff;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   box-shadow: 0 4px 4px 4px rgba(0,0,0,0.12), 0 6px 12px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 0 16px;
+}
+@media mobile {
+  .footer {
+    flex: 0 0 48px;
+    padding: 0 12px;
+  }
 }
 
+.footerLeft {
+  flex: 1 1 100%;
+  margin-right: 16px;
+  color: #666;
+}
+
+.footerRight {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .title {
-  margin: 0 16px;
+  margin: 10px 16px;
   font-size: 22px;
   font-weight: 500;
   flex: 1 1 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  word-break: break-all;
 }
 @media mobile {
   .title {
-    margin: 0 12px;
+    margin: 4px 12px;
     font-size: 18px;
   }
 }
@@ -113,6 +129,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  align-self: flex-start;
 }
 .close:hover {
   background-image: gradientHover;

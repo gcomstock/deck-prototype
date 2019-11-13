@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Sticky from './Sticky';
-import classNames from 'classnames';
 import StatusBubble from './StatusBubble';
 
 import cssComponent from './ObjectRow.module.css';
