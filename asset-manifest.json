@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/deck-prototype/static/css/main.9b7f16c6.chunk.css",
+    "main.css": "/deck-prototype/static/css/main.154de9a5.chunk.css",
     "main.js": "/deck-prototype/static/js/main.abd7e1ad.chunk.js",
     "main.js.map": "/deck-prototype/static/js/main.abd7e1ad.chunk.js.map",
     "runtime~main.js": "/deck-prototype/static/js/runtime~main.0e0a4e99.js",
@@ -9,10 +9,10 @@
     "static/js/2.1daeacb6.chunk.js": "/deck-prototype/static/js/2.1daeacb6.chunk.js",
     "static/js/2.1daeacb6.chunk.js.map": "/deck-prototype/static/js/2.1daeacb6.chunk.js.map",
     "index.html": "/deck-prototype/index.html",
-    "precache-manifest.6adeefe28d2a288731ca92615281c3bb.js": "/deck-prototype/precache-manifest.6adeefe28d2a288731ca92615281c3bb.js",
+    "precache-manifest.1bc59628f3f1cfb356bca3c5cb688f71.js": "/deck-prototype/precache-manifest.1bc59628f3f1cfb356bca3c5cb688f71.js",
     "service-worker.js": "/deck-prototype/service-worker.js",
     "static/css/2.d61080d3.chunk.css.map": "/deck-prototype/static/css/2.d61080d3.chunk.css.map",
-    "static/css/main.9b7f16c6.chunk.css.map": "/deck-prototype/static/css/main.9b7f16c6.chunk.css.map",
+    "static/css/main.154de9a5.chunk.css.map": "/deck-prototype/static/css/main.154de9a5.chunk.css.map",
     "static/media/source-sans-pro.css": "/deck-prototype/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2",
     "static/media/style.css": "/deck-prototype/static/media/icomoon.f0ebf97e.woff2"
   }
