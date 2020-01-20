@@ -24,6 +24,44 @@ export default class Route__App__Functions__Function extends React.Component {
       >
         <NoticeBubble icon="warn-diamond" noticeType="warning" />
 
+        <br/>
+        <br/>
+        <br/>
+
+        <p>
+          <span style={{fontSize: '12px'}}>
+            test test test <a target="_blank" href="#">hello world</a> testt esttestest test t test
+          </span>
+
+          <br/>
+          <br/>
+
+          <span style={{fontSize: '14px'}}>
+            test test test <a target="_blank" href="#">hello world</a> testt esttestest test t test
+          </span>
+
+          <br/>
+          <br/>
+
+          <span style={{fontSize: '16px'}}>
+            test test test <a target="_blank" href="#">hello world</a> testt esttestest test t test
+          </span>
+
+          <br/>
+          <br/>
+
+          <span style={{fontSize: '18px'}}>
+            test test test <a target="_blank" href="#">hello world</a> testt esttestest test t test
+          </span>
+
+          <br/>
+          <br/>
+
+          <span style={{fontSize: '24px'}}>
+            test test test <a target="_blank" href="#">hello world</a> testt esttestest test t test
+          </span>
+        </p>
+
       </Drawer>
     )
   }

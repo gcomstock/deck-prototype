@@ -52,11 +52,6 @@
   display: flex;
   align-items: center;
 }
-@media mobile {
-  /*.header {*/
-    /*flex: 1 0 48px;*/
-  /*}*/
-}
 
 
 .body {
@@ -109,8 +104,6 @@
     margin: 8px 0;
   }
 }
-
-
 
 
 .title {

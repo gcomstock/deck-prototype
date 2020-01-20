@@ -26,6 +26,9 @@ a {
   text-decoration: none;
 }
 
+p a {
+  text-decoration: underline;
+}
 
 
 
@@ -102,4 +105,40 @@ i.ico-btn {
 }
 i.ico-btn:hover {
   background-image: linear-gradient(to bottom, rgba(160,180,220,0.15), rgba(160,180,220,0.15));
+}
+
+
+
+
+
+a[target="_blank"] {
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+a:hover[target="_blank"]:before {
+  content: '\e942';
+  font-family: 'icomoon';
+  position: absolute;
+  width: calc(100% + 2.25em);
+  height: calc(100% + .5em);
+  background-color: white;
+  margin-top: -0.25em;
+  margin-left: -.5em;
+  left: 0;
+  padding-right: .5em;
+  border-radius: .125em;
+  text-align: right;
+  transform: translateZ(-1px);
+  font-size: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+p {
+  font-size: 14px;
 }
