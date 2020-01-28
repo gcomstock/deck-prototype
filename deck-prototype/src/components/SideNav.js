@@ -3,63 +3,72 @@ import TopLevelNav from './TopLevelNav';
 import SideNavLink from './SideNavLink';
 import styles from './SideNav.module.css';
 
+import { ACTIVE_QUERY } from '../mockdata/consts';
+import { navNoApp, navSingleApp, navMultiApp } from '../mockdata/navs';
+import navDelivery from '../assets/svg/navDelivery.svg';
+import navHealth from '../assets/svg/navHealth.svg';
+import navSettings from '../assets/svg/navSettings.svg';
+import navResources from '../assets/svg/navResources.svg';
+
+const icons = {
+  navDelivery,
+  navHealth,
+  navSettings,
+  navResources
+};
+
+const mockActiveQueryNavs = new Map([
+  [ACTIVE_QUERY.NO_APP, navNoApp],
+  [ACTIVE_QUERY.SINGLE_APP, navSingleApp],
+  [ACTIVE_QUERY.MULTI_APP, navMultiApp]
+]);
+
 
 export default class SideNav extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  renderAppNav() {
+  renderNav() {
+    const activeNav = mockActiveQueryNavs.get(this.props.activeQuery);
+
     return (
       <>
-        <div className={styles.appTitleBox}>
-          <div className={styles.appIcon}>
-            <i className="ico icon-app-window"/>
+      {activeNav.map((group, i) => (
+        <>
+        <div className={styles.sectionHeader}>
+          <div className={styles.sectionHeaderIcon}>
+            <img src={icons[group.headerIcon]} width="32"/>
           </div>
-          <div className={styles.appTitle}>application name</div>
+          <div className={styles.sectionHeaderName}>
+            {group.headerName}
+          </div>
         </div>
-
-        <div className={styles.tinyTitle}>Delivery</div>
-        <SideNavLink name="Environments" to="#"/>
-        <SideNavLink name="Pipelines" to="#" count="1"/>
-        <SideNavLink name="Canary Configs" to="#"/>
-        <SideNavLink name="Canary Reports" to="#" count="992"/>
-
-        <div className={styles.tinyTitle}>Infrastructure</div>
-        <SideNavLink name="Clusters" to="/applications/app/clusters"/>
-        <SideNavLink name="Load Balancers" to="#"/>
-        <SideNavLink name="Security Groups" to="#"/>
-        <SideNavLink name="Properties" to="#"/>
-        <SideNavLink name="Functions" to="/applications/app/functions" count="7"/>
-
-        <div className={styles.tinyTitle}>Admin</div>
-        <SideNavLink name="Tasks" to="#"/>
-        <SideNavLink name="Config" to="#"/>
-        <SideNavLink name="Analytics" to="#"/>
-        <SideNavLink name="Permissions" to="#"/>
-        <SideNavLink name="View Team" to="#"/>
-        <SideNavLink name="Page Team" to="#"/>
+        <div>
+          {group.children.map((link, index) => (
+            <SideNavLink name={link.name} to={link.to} key={link.name} count={link.count}/>
+          ))}
+        </div>
+        </>
+      ))}
       </>
     )
   }
 
   render() {
-    if (!this.props.isSideNavOpen || !this.props.isAppPath && !this.props.isMobile) {
-      return <div/>
+    if (!this.props.isOpen) {
+      return null
     }
 
     return (
       <div className={styles.SideNav}>
         <div className={styles.navContainer}>
           <div className={styles.navContent}>
-            { this.props.isMobile && <TopLevelNav/> }
-            { this.props.isAppPath && this.renderAppNav() }
+            { this.renderNav() }
           </div>
-          <div className={styles.scrollFader}/>
+          {/* <div className={styles.scrollFader}/> */}
         </div>
       </div>
     )
   }
 }
-
-

@@ -4,7 +4,7 @@ import styles from './SideNavLink.module.css';
 
 
 export default function SideNavLink(props) {
-  const count = props.count && props.count > 99 ? '99+' : props.count;
+  const count = props.count && props.count > 999 ? '999+' : props.count;
 
   return (
     <NavLink className={styles.SideNavLink} activeClassName={styles.active} to={props.to}>

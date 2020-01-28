@@ -1,9 +1,9 @@
 @value variables: "./_variables.module.css";
-@value colorHeader, colorSubHeaderDark, colorBg, headerHeight, shadow4, mobile from variables;
+@value colorKey, colorSubHeaderDark, colorBg, headerHeight, shadow4, mobile from variables;
 
 
 .SideNav {
-  flex: 0 0 200px;
+  flex: 0 0 248px;
   position: relative;
 }
 
@@ -17,10 +17,10 @@
 .navContainer {
   position: fixed;
   z-index: 7000;
-  width: 200px;
+  width: 248px;
   top: headerHeight;
   bottom: 0;
-  background-color: #fff;
+  background-color: colorKey;
   display: flex;
   flex-direction: column;
 }
@@ -29,8 +29,10 @@
   overflow: scroll;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
-  padding: 16px 0 80px;
-  flex: 1 1 100%;
+  padding: 16px 0;
+  background-color: colorBg;
+  /*padding: 0 0 80px;*/
+  /*flex: 1 1 100%;*/
 }
 
 @media mobile {
@@ -40,6 +42,18 @@
   }
 }
 
+
+.section {
+  background-color: red;
+  height: 48px;
+}
+.activeSection {
+  background-color: cyan;
+  color: #000;
+}
+
+
+/*
 .scrollFader {
   position: relative;
 }
@@ -54,37 +68,26 @@
   pointer-events: none;
   background: linear-gradient(to bottom, rgba(245,245,245,0) 0%, rgba(245,245,245,1) 100%);
 }
+*/
 
-.appTitleBox {
-  display: flex;
-}
 
-.appIcon {
-  background-color: colorHeader;
-  flex: 0 0 40px;
-  height: 40px;
-  border-radius: 0 3px 3px 0;
+
+.sectionHeader {
+  border-bottom: 1px solid colorSubHeaderDark;
+  margin: 8px 8px 0 8px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #fff;
+  height: 40px;
 }
 
-.appTitle {
-  padding: 10px 8px 0;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 18px;
-  word-break: break-all;
+.sectionHeaderIcon {
+  flex: 0 0 40px;
+  padding: 0 8px;
 }
 
-.tinyTitle {
-  text-transform: uppercase;
-  font-size: 12px;
+.sectionHeaderName {
+  flex: 1 1 auto;
+  font-size: 17px;
   color: colorSubHeaderDark;
   font-weight: 600;
-  border-bottom: 1px solid colorSubHeaderDark;
-  padding: 0 8px 0 16px;
-  line-height: 23px;
-  margin: 16px 0 8px;
 }

@@ -8,14 +8,14 @@ let styles = {};
 Object.assign(styles, cssComponent, cssVariables);
 
 
-export const ObjectRow = ({ mockInfra, currentUrl, depth = 0 }) => {
+export const ObjectRow = ({ mockData, currentUrl, depth = 0 }) => {
   return (
     <>
-      {mockInfra.map(row => (
+      {mockData.map(row => (
         <div>
           <Link className={styles.ObjectRow} to={`${currentUrl}/${row.url}`} style={getStylesFromDepth(depth)}>
 
-            <div className={styles.leftCol}>
+            <div className={styles.leftCol} style={getMarginFromDepth(depth)}>
               <i className={`ico icon-${row.icon}`}/>
               <span className={styles.rowTitle}>{row.title}</span>
             </div>
@@ -25,7 +25,7 @@ export const ObjectRow = ({ mockInfra, currentUrl, depth = 0 }) => {
                 level="info"
                 icon="md"
                 hoverText="oh snap"
-                qty="123"
+                qty="823"
               />
               <StatusBubble
                 level="error"
@@ -42,7 +42,7 @@ export const ObjectRow = ({ mockInfra, currentUrl, depth = 0 }) => {
           {/* Recursively render children */}
           {(row.children.length > 0) &&
           <ObjectRow
-            mockInfra={row.children}
+            mockData={row.children}
             currentUrl={currentUrl}
             depth={depth + 1}
           />
@@ -58,8 +58,14 @@ const getStylesFromDepth = (depth) => {
   return {
     marginLeft: 16*depth,
     position: 'sticky',
-    top: 48 + 40*depth,
-    zIndex: 1000-depth
+    top: 104 + 40*depth,
+    zIndex: 500-depth
+  }
+};
+
+const getMarginFromDepth = (depth) => {
+  return {
+    //marginLeft: 16*depth
   }
 };
 

@@ -10,17 +10,23 @@
 
 
 @value colorRowRule: #cccccc;
+@value colorRowHeader: #888888;
+
+@value colorGrayMid: #666666;
 
 /*@value colorBgEmphasis: #f7f7f7;*/
 /*@value colorBg: #ffffff;*/
 /*@value colorMainRow: #eeeeee;*/
 /*@value colorSubRow: #f4f4f4;*/
 
+@value colorKey: rgb(100,140,175);
+
 
 @value colorHeaderXlight: #afbec8;
 @value colorHeaderLight: #647d92;
 @value colorHeader: #31556c;
 @value colorHeaderDark: #1e3c5a;
+
 
 @value colorSubHeaderLight: #999;
 @value colorSubHeader: #666;
@@ -39,8 +45,10 @@
 @value gradientHover: linear-gradient(to bottom, rgba(160,180,220,0.15), rgba(160,180,220,0.15));
 
 
-@value headerHeight: 48px;
+@value headerHeight: 56px;
+@value menuWidth: 248px;
 @value webRowHeight: 40px;
+@value pageAndObjectRowHeaderHeights: 104px;
 
 
 @value colorTextMid: #444444;

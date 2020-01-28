@@ -18,7 +18,7 @@ export default class Route__App__Functions__Function extends React.Component {
       <Drawer
         {...this.props}
         drawerWidth={this.props.drawerWidth}
-        icon="lambda"
+        icon={this.props.icon}
         title="FunctionName"
         subTitle="MY-AWS-ACCOUNT / US-WEST-2 / v004"
       >

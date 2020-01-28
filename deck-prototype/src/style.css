@@ -34,9 +34,9 @@ p a {
 
 
 
-span {
-  width: auto; /* override */
-}
+/*span {*/
+  /*width: auto;*/
+/*}*/
 
 .where {
   margin-top: 4px;
@@ -141,4 +141,17 @@ a:hover[target="_blank"]:before {
 
 p {
   font-size: 14px;
+}
+
+
+.Body {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Routes {
+  flex: 1 1 auto;
+  margin: 0 16px;
 }

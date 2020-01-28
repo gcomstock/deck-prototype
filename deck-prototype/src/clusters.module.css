@@ -1,0 +1,40 @@
+@value variables: "./components/_variables.module.css";
+@value colorBg, colorRowHeader from variables;
+
+.ObjectRowHeader {
+  position: sticky;
+  top: 56px;
+  height: 48px;
+  z-index: 999;
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  padding: 0 8px;
+  display: flex;
+  align-items: flex-start;
+
+
+  background:
+    linear-gradient(-135deg, colorBg 3px, transparent 0),
+    linear-gradient(135deg, colorBg 3px, transparent 0),
+    linear-gradient(-135deg, colorRowHeader 4px, transparent 1px),
+    linear-gradient(135deg, colorRowHeader 4px, transparent 1px);
+  background-position: 0 calc(100% - 4px), 0 calc(100% - 4px);
+  background-repeat: repeat-x, repeat-x;
+  background-size: 8px 8px, 8px 8px;
+  background-color: colorBg;
+}
+
+
+.scrollOffHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bod {
+  display: flex;
+}
+
+
+.rows {
+  /*flex: 1 1 auto;*/
+}

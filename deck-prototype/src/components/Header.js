@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import TopLevelNav from './TopLevelNav';
 import styles from './Header.module.css';
 import Modal from './Modal';
+import SearchBar from './SearchBar';
 
 
 export default class Header extends React.Component {
@@ -22,8 +23,7 @@ export default class Header extends React.Component {
 
   render() {
     const btnClasses = classNames(styles.menuButton, {
-      [styles.open]: this.props.isSideNavOpen,
-      [styles.disabled]: !this.props.isAppPath && !this.props.isMobile
+      [styles.open]: this.props.isSideNavOpen
     });
 
     const closeClasses = classNames({
@@ -32,17 +32,26 @@ export default class Header extends React.Component {
       'icon-menu': !this.props.isSideNavOpen
     });
 
+    const leftSectionClasses = classNames({
+      [styles.leftSection]: true,
+      [styles.leftSectionClosed]: !this.props.isSideNavOpen
+    });
+
     return (
       <div className={styles.Header}>
-        <div className={btnClasses} onClick={this.props.toggleSideNav}>
-           <i className={closeClasses}/>
+        <div className={leftSectionClasses}>
+          <div className={btnClasses} onClick={this.props.toggleSideNav}>
+            <i className={closeClasses}/>
+          </div>
+          <Link className={styles.logo} to="/">Spinnaker</Link>
         </div>
-        <Link className={styles.logo} to="/">Spinnaker</Link>
-        { !this.props.isMobile && <TopLevelNav/> }
+
+        <div className={styles.centerSection}>
+          <SearchBar setActiveQuery={this.props.setActiveQuery} activeQuery={this.props.activeQuery} />
+        </div>
 
 
-        <button onClick={this.toggleDemoModal}>MD History</button>
-
+        {/* <button onClick={this.toggleDemoModal}>MD History</button> */}
         { //placeholder to mock out modal
           this.state.isDemoModalOpen && <Modal toggleDemoModal={this.toggleDemoModal} isMobile={this.props.isMobile} />
         }

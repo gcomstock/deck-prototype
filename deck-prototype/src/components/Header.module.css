@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value headerHeight, colorHeader, gradientHover, mobile from variables;
+@value headerHeight, menuWidth, colorKey, colorBg, gradientHover, mobile from variables;
 
 
 .Header {
@@ -8,25 +8,39 @@
   top: 0;
   left: 0;
   height: headerHeight;
-  background-color: colorHeader;
   display: flex;
   align-items: center;
   z-index: 8000;
+  background-color: colorBg;
+}
+
+.leftSection {
+  flex: 0 0 menuWidth;
+  display: flex;
+  background-color: colorKey;
+  color: #fff;
+}
+
+.leftSectionClosed {
+  background-color: colorBg;
+  color: colorKey;
+}
+
+
+
+.centerSection {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .menuButton {
-  flex: 0 0 headerHeight;
+  flex: 0 0 48px;
   height: headerHeight;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-}
-
-.menuButton.disabled {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .menuButton:hover {
@@ -34,16 +48,14 @@
 }
 
 .logo {
+  flex: 1 1 auto;
   display: flex;
-  color: #fff;
   flex-direction: column;
-  padding: 0 16px;
-  margin: 0 24px;
+  padding: 0 8px;
   justify-content: center;
-  height: 100%;
-  text-align: center;
   font-size: 24px;
   font-weight: 300;
+  color: inherit;
 }
 
 .logo:focus {
@@ -52,7 +64,6 @@
 }
 
 .logo:hover {
-  color: #fff;
   background-image: gradientHover;
 }
 

@@ -2,6 +2,8 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import { HashRouter as Router, Route, Link, withRouter } from 'react-router-dom';
 
+import SideNav from './components/SideNav';
+
 import Route__Root from './Route__Root';
 import Route__Myteam from './Route__Myteam';
 import Route__Applications__App from './Route__Applications__App';
@@ -16,10 +18,11 @@ import styles from './components/_variables.module.css';
 //import './deck-oss_CSS.css';
 //import './deck-nflx_CSS.css';
 
+
+
 // new global styles
 import './assets/icomoon/style.css';
 import './style.css';
-
 
 
 const BREAKPOINT_MOBILE = styles.breakpointMobile;
@@ -30,12 +33,12 @@ export class App extends React.Component {
     super(props);
 
     this.toggleSideNav = this.toggleSideNav.bind(this);
-    this.setIsAppPath = this.setIsAppPath.bind(this);
+    this.setActiveQuery = this.setActiveQuery.bind(this);
 
     this.state = {
       isMobile: false,
       isSideNavOpen: true,
-      isAppPath: false
+      activeQuery: ''
     };
 
     window.onresize = (e) => {
@@ -57,8 +60,8 @@ export class App extends React.Component {
     this.setState({isSideNavOpen: !this.state.isSideNavOpen});
   }
 
-  setIsAppPath(bool) {
-    this.setState({isAppPath: bool});
+  setActiveQuery(query) {
+    this.setState({activeQuery: query});
   }
 
   componentDidMount() {
@@ -73,67 +76,54 @@ export class App extends React.Component {
   render() {
     return (
       <Router basename='/'>
-        <div>
-          <Header
-            isSideNavOpen={this.state.isSideNavOpen}
+        <Header
+          isSideNavOpen={this.state.isSideNavOpen}
+          isMobile={this.state.isMobile}
+          activeQuery={this.state.activeQuery}
+          toggleSideNav={this.toggleSideNav}
+          setActiveQuery={this.setActiveQuery}
+        />
+
+        <div className="Body">
+          <SideNav
             isMobile={this.state.isMobile}
-            isAppPath={this.state.isAppPath}
-            toggleSideNav={this.toggleSideNav}
+            activeQuery={this.state.activeQuery}
+            isOpen={this.state.isSideNavOpen}
           />
 
-          <Route
-            path='/teams/myteam'
-            render={(props) => <Route__Myteam {...props}
-              isSideNavOpen={this.state.isSideNavOpen}
-              isMobile={this.state.isMobile}
-              isAppPath={this.state.isAppPath}
-              setIsAppPath={this.setIsAppPath}
-            />}
-          />
+          <div className="Routes">
+            <Route
+              exact path='/applications/app/'
+              render={(props) => <Route__Applications__App {...props}
+                isMobile={this.state.isMobile}
+              />}
+            />
 
-          <Route
-            exact path='/applications/app/'
-            render={(props) => <Route__Applications__App {...props}
-              isSideNavOpen={this.state.isSideNavOpen}
-              isMobile={this.state.isMobile}
-              isAppPath={this.state.isAppPath}
-              setIsAppPath={this.setIsAppPath}
-            />}
-          />
+            <Route
+              exact path='/'
+              render={(props) => <Route__Root {...props}
+                isMobile={this.state.isMobile}
+              />}
+            />
 
-          <Route
-            exact path='/'
-            render={(props) => <Route__Root {...props}
-              isSideNavOpen={this.state.isSideNavOpen}
-              isMobile={this.state.isMobile}
-              isAppPath={this.state.isAppPath}
-              setIsAppPath={this.setIsAppPath}
-            />}
-          />
+            <Route
+              path='/applications/app/clusters'
+              render={(props) => <Route__Applications__App__Clusters {...props}
+                isMobile={this.state.isMobile}
+              />}
+            />
 
-          <Route
-            path='/applications/app/clusters'
-            render={(props) => <Route__Applications__App__Clusters {...props}
-              isSideNavOpen={this.state.isSideNavOpen}
-              isMobile={this.state.isMobile}
-              isAppPath={this.state.isAppPath}
-              setIsAppPath={this.setIsAppPath}
-            />}
-          />
-
-          <Route
-            path='/applications/app/functions'
-            render={(props) => <Route__Applications__App__Functions {...props}
-              isSideNavOpen={this.state.isSideNavOpen}
-              isMobile={this.state.isMobile}
-              isAppPath={this.state.isAppPath}
-              setIsAppPath={this.setIsAppPath}
-            />}
-          />
+            <Route
+              path='/applications/app/functions'
+              render={(props) => <Route__Applications__App__Functions {...props}
+                isMobile={this.state.isMobile}
+              />}
+            />
+          </div>
         </div>
       </Router>
     );
   }
 }
 
-render(<App/>,  document.getElementById('root'));
+render(<App/>, document.getElementById('root'));

@@ -40,14 +40,13 @@ const stubbedColumns = [
 export default class Route__App__Functions extends React.Component {
   constructor(props) {
     super(props);
-    props.setIsAppPath(true);
   }
 
   render() {
     return (
       <Body>
 
-        <SideNav isMobile={this.props.isMobile} isSideNavOpen={this.props.isSideNavOpen} isAppPath={this.props.isAppPath} />
+        <SideNav isMobile={this.props.isMobile} isSideNavOpen={this.props.isSideNavOpen} />
 
 
         <ContentArea drawerWidth={DRAWER_WIDTH} contentWidth={CONTENT_WIDTH}>

@@ -1,0 +1,53 @@
+@value variables: "./_variables.module.css";
+@value colorKey, gradientHover from variables;
+
+
+.SearchBar {
+  border-radius: 48px;
+  height: 40px;
+  border: 1px solid #999;
+  padding: 0 24px 0 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 400px;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.SearchBar:hover {
+  background-image: gradientHover;
+}
+
+.searchIcon {
+  margin-right: 12px;
+}
+
+
+/* move to own component */
+
+.searchPill {
+  display: inline-flex;
+  margin-right: 4px;
+  font-size: 14px;
+  height: 28px;
+  align-items: center;
+}
+
+.searchPillKey {
+  background-color: colorKey;
+  padding: 0 8px;
+  color: white;
+  border-radius: 2px 0 0 2px;
+  line-height: 28px;
+}
+
+.searchPillVal {
+  background-color: white;
+  padding: 0 8px;
+  color: colorKey;
+  box-shadow: inset 0 0 0 1px colorKey;
+  border-radius: 0 2px 2px 0;
+  line-height: 28px;
+}
