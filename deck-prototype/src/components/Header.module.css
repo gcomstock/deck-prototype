@@ -22,6 +22,7 @@
 }
 
 .leftSectionClosed {
+  flex: 0 0 160px;
   background-color: colorBg;
   color: colorKey;
 }

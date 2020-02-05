@@ -14,6 +14,7 @@
   color: #999;
   cursor: pointer;
   font-size: 14px;
+  user-select: none;
 }
 
 .SearchBar:hover {

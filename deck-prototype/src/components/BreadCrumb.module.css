@@ -1,12 +1,13 @@
 @value variables: "./_variables.module.css";
-@value colorHeader, mobile from variables;
+@value colorRowHeader, mobile from variables;
 
 .BreadCrumb {
-  color: colorHeader;
+  color: colorRowHeader;
   font-size: 24px;
-  /*margin: 16px 0;*/
   margin-bottom: 32px;
   line-height: 48px;
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
 @media mobile {

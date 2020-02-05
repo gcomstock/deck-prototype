@@ -11,7 +11,10 @@
   padding: 0 8px;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 
+
+  /*width: 1156px;*/
 
   background:
     linear-gradient(-135deg, colorBg 3px, transparent 0),

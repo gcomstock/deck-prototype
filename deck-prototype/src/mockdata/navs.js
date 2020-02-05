@@ -88,7 +88,7 @@ export const navSingleApp = [
     children: [
       {
         name: 'templating',
-        to: '',
+        to: '/applications/app/templating',
         count: ''
       },
       {
@@ -137,7 +137,7 @@ export const navNoApp = [
     children: [
       {
         name: 'templating',
-        to: '',
+        to: '/applications/app/templating',
         count: ''
       }
     ]

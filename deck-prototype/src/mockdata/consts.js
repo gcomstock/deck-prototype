@@ -3,3 +3,8 @@ export const ACTIVE_QUERY = {
   SINGLE_APP : 'singleApp',
   MULTI_APP : 'multiApp'
 }
+
+export const ROUTES = {
+  CLUSTERS : 'clusters',
+  TEMPLATING : 'templating'
+}

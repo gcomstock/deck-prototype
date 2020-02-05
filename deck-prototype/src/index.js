@@ -110,6 +110,16 @@ export class App extends React.Component {
               path='/applications/app/clusters'
               render={(props) => <Route__Applications__App__Clusters {...props}
                 isMobile={this.state.isMobile}
+                route='clusters'
+              />}
+            />
+
+            <Route
+              path='/applications/app/templating'
+              render={(props) => <Route__Applications__App__Clusters {...props}
+                isMobile={this.state.isMobile}
+                activeQuery={this.state.activeQuery}
+                route='templating'
               />}
             />
 

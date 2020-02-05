@@ -147,11 +147,11 @@ p {
 .Body {
   margin-top: 56px;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  /*justify-content: space-between;*/
 }
 
 .Routes {
   flex: 1 1 auto;
   margin: 0 16px;
+  max-width: 1600px;
 }

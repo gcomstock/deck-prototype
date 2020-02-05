@@ -1,7 +1,8 @@
-export const mockInfra = [
+export const clustersMulti = [
   {
     icon: 'app-window-sm',
-    title: 'app name',
+    title: 'app namesdasdasdsadasdasd',
+    subTitle: 'foo',
     url: 'appDetail',
     type: 'app',
     version: null,

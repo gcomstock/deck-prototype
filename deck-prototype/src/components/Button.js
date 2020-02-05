@@ -2,12 +2,6 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './Button.module.css';
 
-//import cssComponent from './Button.module.css';
-//import cssVariables from './_variables.module.css';
-//let styles = {};
-//Object.assign(styles, cssComponent, cssVariables);
-
-
 export default function Button({ text, icon, theme, clickHandler }) {
   const buttonClasses = classNames({
     [styles.Button]: true,

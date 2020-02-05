@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import StatusBubble from './StatusBubble';
+import classNames from 'classnames';
 
 import cssComponent from './ObjectRow.module.css';
 import cssVariables from './_variables.module.css';
@@ -8,35 +9,29 @@ let styles = {};
 Object.assign(styles, cssComponent, cssVariables);
 
 
-export const ObjectRow = ({ mockData, currentUrl, depth = 0 }) => {
+export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForDrawer, depth = 0 }) => {
+
   return (
     <>
-      {mockData.map(row => (
+      {mockData.map((row, index) => (
         <div>
-          <Link className={styles.ObjectRow} to={`${currentUrl}/${row.url}`} style={getStylesFromDepth(depth)}>
-
-            <div className={styles.leftCol} style={getMarginFromDepth(depth)}>
+          <Link
+            className={buildRowClasses(row)}
+            to={`${currentUrl}/${row.url}`}
+            style={getStylesFromDepth(depth)}
+            data-mockdatakey={buildMockDataKey(mockDataKey, index)}
+            onClick={getPropsForDrawer}
+          >
+            <div className={styles.leftCol}>
               <i className={`ico icon-${row.icon}`}/>
               <span className={styles.rowTitle}>{row.title}</span>
             </div>
             <div className={styles.centerCol}>
-
-              <StatusBubble
-                level="info"
-                icon="md"
-                hoverText="oh snap"
-                qty="823"
-              />
-              <StatusBubble
-                level="error"
-                icon="servergroup-aws"
-                hoverText="ruh roh"
-              />
+              {renderStatusBubbles(row.statuses)}
             </div>
             <div className={styles.rightCol}>
               
             </div>
-
           </Link>
 
           {/* Recursively render children */}
@@ -44,7 +39,9 @@ export const ObjectRow = ({ mockData, currentUrl, depth = 0 }) => {
           <ObjectRow
             mockData={row.children}
             currentUrl={currentUrl}
+            getPropsForDrawer={getPropsForDrawer}
             depth={depth + 1}
+            mockDataKey={buildMockDataKey(mockDataKey, index) + '.children'}
           />
           }
         </div>
@@ -63,15 +60,36 @@ const getStylesFromDepth = (depth) => {
   }
 };
 
-const getMarginFromDepth = (depth) => {
-  return {
-    //marginLeft: 16*depth
-  }
+const renderStatusBubbles = (statuses) => {
+  return (
+    <>
+    {statuses.map((status) => (
+      <StatusBubble
+        level={status.level}
+        icon={status.icon}
+        hoverText={status.hoverText}
+        fullText={status.fullText}
+        qty={status.qty}
+      />
+    ))}
+    </>
+  )
+};
+
+const buildMockDataKey = (oldMockDataKey, index) => {
+  return `${oldMockDataKey}[${index}]`;
+};
+
+const buildRowClasses = (row) => {
+  return classNames(styles.ObjectRow, {
+    [styles.active]: row.isActive
+  });
 };
 
 
-//z index, depth fix
 
+
+//TODO
 
 const Checkbox = ({ selected, label, onChange }) => {
   return (

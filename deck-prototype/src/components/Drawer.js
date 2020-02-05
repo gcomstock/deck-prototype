@@ -5,11 +5,13 @@ import styles from './Drawer.module.css';
 export default class Drawer extends React.Component {
   constructor(props) {
     super(props);
+
     this.close = this.close.bind(this);
   }
 
   close() {
     this.props.history.push(this.props.match.url.substring(0, this.props.match.url.lastIndexOf('/')));
+    this.props.resetMockData();
   }
 
   render() {
