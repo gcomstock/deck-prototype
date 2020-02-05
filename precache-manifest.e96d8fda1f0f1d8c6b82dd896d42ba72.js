@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fb99bfae9a4dcce7321f3a6c1dbfb10",
+    "revision": "04d9106149b0995710b552d77688b722",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "731f54b9cca9ffe4c480",
+    "revision": "751ee697569a819d7c69",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "d81d35d2b7050f5310e3",
-    "url": "/deck-prototype/static/css/main.5e21fd3c.chunk.css"
+    "revision": "ad7f82964dd291accf33",
+    "url": "/deck-prototype/static/css/main.6c597fb4.chunk.css"
   },
   {
-    "revision": "731f54b9cca9ffe4c480",
-    "url": "/deck-prototype/static/js/2.1daeacb6.chunk.js"
+    "revision": "751ee697569a819d7c69",
+    "url": "/deck-prototype/static/js/2.5860a517.chunk.js"
   },
   {
-    "revision": "d81d35d2b7050f5310e3",
-    "url": "/deck-prototype/static/js/main.9b9d6e67.chunk.js"
+    "revision": "ad7f82964dd291accf33",
+    "url": "/deck-prototype/static/js/main.e0cc1c10.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
@@ -216,19 +216,35 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deck-prototype/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2"
   },
   {
-    "revision": "3500f7367f1182da118eaee66c2f0869",
-    "url": "/deck-prototype/static/media/icomoon.3500f736.svg"
+    "revision": "2678c9516041329e9f29e22d49530d68",
+    "url": "/deck-prototype/static/media/icomoon.2678c951.woff"
   },
   {
-    "revision": "733f97f33bf05696bd3750de52f52273",
-    "url": "/deck-prototype/static/media/icomoon.733f97f3.woff"
+    "revision": "4a1f523b3fe401baefdfcd5c325da267",
+    "url": "/deck-prototype/static/media/icomoon.4a1f523b.svg"
   },
   {
-    "revision": "9a80eb051652df84567053e9978e0ac3",
-    "url": "/deck-prototype/static/media/icomoon.9a80eb05.ttf"
+    "revision": "889fb2cfe3614b3ead1a7af6cd6be5fe",
+    "url": "/deck-prototype/static/media/icomoon.889fb2cf.woff2"
   },
   {
-    "revision": "f0ebf97ea934793d343e0fa470997672",
-    "url": "/deck-prototype/static/media/icomoon.f0ebf97e.woff2"
+    "revision": "961ffa63ee1819d9c14dc26c469f4429",
+    "url": "/deck-prototype/static/media/icomoon.961ffa63.ttf"
+  },
+  {
+    "revision": "16f8362643327a16284a6c7e9d4cae06",
+    "url": "/deck-prototype/static/media/navDelivery.16f83626.svg"
+  },
+  {
+    "revision": "3212f052b5675bf3ec5ba1fb3d52b930",
+    "url": "/deck-prototype/static/media/navHealth.3212f052.svg"
+  },
+  {
+    "revision": "f5245a9c9d242c75e6d4d8a338830718",
+    "url": "/deck-prototype/static/media/navResources.f5245a9c.svg"
+  },
+  {
+    "revision": "519d6e219a9c406922f2e29246a728e4",
+    "url": "/deck-prototype/static/media/navSettings.519d6e21.svg"
   }
 ]);
