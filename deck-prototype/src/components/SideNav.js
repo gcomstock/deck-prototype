@@ -36,19 +36,19 @@ export default class SideNav extends React.Component {
       <>
       {activeNav.map((group, i) => (
         <>
-        <div className={styles.sectionHeader}>
-          <div className={styles.sectionHeaderIcon}>
-            <img src={icons[group.headerIcon]} width="32"/>
+          <div className={styles.sectionHeader}>
+            <div className={styles.sectionHeaderIcon}>
+              <img src={icons[group.headerIcon]} width="32"/>
+            </div>
+            <div className={styles.sectionHeaderName}>
+              {group.headerName}
+            </div>
           </div>
-          <div className={styles.sectionHeaderName}>
-            {group.headerName}
+          <div>
+            {group.children.map((link, index) => (
+              <SideNavLink name={link.name} to={link.to} key={link.name} count={link.count}/>
+            ))}
           </div>
-        </div>
-        <div>
-          {group.children.map((link, index) => (
-            <SideNavLink name={link.name} to={link.to} key={link.name} count={link.count}/>
-          ))}
-        </div>
         </>
       ))}
       </>

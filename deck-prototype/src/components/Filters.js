@@ -18,29 +18,96 @@ export default class Filters extends React.Component {
           <div className={styles.scrolly}>
 
             <div className={styles.facetTitle}>
-              status level
+              facet category
             </div>
-
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
             <div className={styles.facet}>
               <div className={styles.facetCheckbox}></div>
               <div className={styles.facetName}>Facet</div>
             </div>
 
+            <div className={styles.facetTitle}>
+              facet category
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
             <div className={styles.facet}>
               <div className={styles.facetCheckbox}></div>
               <div className={styles.facetName}>Facet</div>
             </div>
 
+            <div className={styles.facetTitle}>
+              facet category
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
             <div className={styles.facet}>
               <div className={styles.facetCheckbox}></div>
               <div className={styles.facetName}>Facet</div>
             </div>
 
+            <div className={styles.facetTitle}>
+              facet category
+            </div>
             <div className={styles.facet}>
               <div className={styles.facetCheckbox}></div>
               <div className={styles.facetName}>Facet</div>
             </div>
-
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
             <div className={styles.facet}>
               <div className={styles.facetCheckbox}></div>
               <div className={styles.facetName}>Facet</div>

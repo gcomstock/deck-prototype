@@ -26,6 +26,7 @@
   line-height: 24px;
   font-weight: bold;
   color: colorGrayMid;
+  margin-top: 16px;
 }
 
 
@@ -36,6 +37,7 @@
   font-size: 14px;
   cursor: pointer;
   color: colorGrayMid;
+  padding-left: 8px;
 }
 
 .facet:hover {

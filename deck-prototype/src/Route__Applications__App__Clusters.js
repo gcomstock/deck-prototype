@@ -95,12 +95,23 @@ export default class Route__App__Clusters extends React.Component {
       return clustersSingle;
     if (route === ROUTES.TEMPLATING && activeQuery === ACTIVE_QUERY.MULTI_APP)
       return clustersMulti;
+
+
+    return clustersSingle;
   }
 
 
   componentWillReceiveProps (newProps) {
-    if ( newProps.activeQuery !== this.props.activeQuery ) {
+    if ( newProps.activeQuery !== this.props.activeQuery) {
       this.resetMockData();
+      window.scrollTo(0, 0);
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.route !== prevProps.route) {
+      console.log('changed')
+      window.scrollTo(0, 0);
     }
   }
 
