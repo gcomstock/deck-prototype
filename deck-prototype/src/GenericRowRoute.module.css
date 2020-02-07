@@ -1,6 +1,13 @@
 @value variables: "./components/_variables.module.css";
 @value colorBg, colorRowHeader from variables;
 
+
+.GenericRowRoute {
+  /*flex: 0 1 1200px;*/
+  flex: 1 1 1200px;
+}
+
+
 .ObjectRowHeader {
   position: sticky;
   top: 56px;
@@ -12,9 +19,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
-
-  /*width: 1156px;*/
 
   background:
     linear-gradient(-135deg, colorBg 3px, transparent 0),
@@ -31,13 +35,4 @@
 .scrollOffHeader {
   display: flex;
   justify-content: space-between;
-}
-
-.bod {
-  display: flex;
-}
-
-
-.rows {
-  /*flex: 1 1 auto;*/
 }

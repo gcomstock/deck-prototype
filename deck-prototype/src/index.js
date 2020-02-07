@@ -7,7 +7,7 @@ import SideNav from './components/SideNav';
 import Route__Root from './Route__Root';
 import Route__Myteam from './Route__Myteam';
 import Route__Applications__App from './Route__Applications__App';
-import Route__Applications__App__Clusters from './Route__Applications__App__Clusters';
+import Route__GenericRowRoute from './Route__GenericRowRoute';
 import Route__Applications__App__Functions from './Route__Applications__App__Functions';
 import Header from './components/Header';
 import 'source-sans-pro/source-sans-pro.css';
@@ -108,7 +108,7 @@ export class App extends React.Component {
 
             <Route
               path='/applications/app/clusters'
-              render={(props) => <Route__Applications__App__Clusters {...props}
+              render={(props) => <Route__GenericRowRoute {...props}
                 isMobile={this.state.isMobile}
                 route='clusters'
               />}
@@ -116,7 +116,7 @@ export class App extends React.Component {
 
             <Route
               path='/applications/app/templating'
-              render={(props) => <Route__Applications__App__Clusters {...props}
+              render={(props) => <Route__GenericRowRoute {...props}
                 isMobile={this.state.isMobile}
                 activeQuery={this.state.activeQuery}
                 route='templating'

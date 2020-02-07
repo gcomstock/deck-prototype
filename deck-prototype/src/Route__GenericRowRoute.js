@@ -7,7 +7,7 @@ import Filters from './components/Filters';
 import { ObjectRow } from './components/ObjectRow';
 import Button from './components/Button';
 import Drawer from './components/Drawer';
-import styles from './clusters.module.css';
+import styles from './GenericRowRoute.module.css';
 
 
 import { ACTIVE_QUERY, ROUTES } from './mockdata/consts';
@@ -15,11 +15,11 @@ import { clustersSingle } from './mockdata/clustersSingle';
 import { clustersMulti } from './mockdata/clustersMulti';
 
 
-const CONTENT_WIDTH = '880px';
+const CONTENT_WIDTH = 1200;
 
 
 
-export default class Route__App__Clusters extends React.Component {
+export default class Route__GenericRowRoute extends React.Component {
   constructor(props) {
     super(props);
 
@@ -108,16 +108,10 @@ export default class Route__App__Clusters extends React.Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.route !== prevProps.route) {
-      console.log('changed')
-      window.scrollTo(0, 0);
-    }
-  }
-
 
   render() {
     const d = this.state.drawer;
+    const totalContentWidth = this.state.isFiltersOpen ? CONTENT_WIDTH + 248 + 'px' : CONTENT_WIDTH + 'px';
 
     return (
       <>
@@ -128,20 +122,23 @@ export default class Route__App__Clusters extends React.Component {
 
 
         <div className={styles.ObjectRowHeader}>
-          <div className={styles.filterContent}>
-            <Button icon="search" theme="clear" clickHandler={this.toggleFilters}/>
-          </div>
-          <div className={styles.selectionContent}>
-            <Button icon="collapse-all" theme="clear" clickHandler={this.toggleFilters}/>
-            <Button icon="collapse-all" theme="clear" clickHandler={this.toggleFilters}/>
+          <div style={{flex: `0 1 ${totalContentWidth}`, display: 'flex', justifyContent: 'space-between'}}>
+
+            <div className={styles.filterContent}>
+              <Button icon="search" theme="clear" clickHandler={this.toggleFilters}/>
+            </div>
+            <div className={styles.selectionContent}>
+              <Button icon="collapse-all" theme="clear" clickHandler={this.toggleFilters}/>
+              <Button icon="collapse-all" theme="clear" clickHandler={this.toggleFilters}/>
+            </div>
+
           </div>
         </div>
 
 
-        <div className={styles.bod}>
+        <div style={{maxWidth: totalContentWidth, display: 'flex'}}>
           <Filters isOpen={this.state.isFiltersOpen}/>
-
-          <div className={styles.rows} style={{flex: `0 1 ${CONTENT_WIDTH}`}}>
+          <div className={styles.rows} style={{flex: `0 1 ${totalContentWidth}`}}>
             <ObjectRow
               mockData={this.state.mockData}
               currentUrl={this.props.match.url}
