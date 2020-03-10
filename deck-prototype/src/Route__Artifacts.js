@@ -151,6 +151,53 @@ export default class Route__GenericRowRoute extends React.Component {
                   }
                 ]}
               />
+
+              <ArtifactRow
+                clickHandler={this.toggleArtifactDetail}
+                currentUrl={this.props.match.url}
+                version="#122"
+                name="Artifact Name Artifact Name Artifact Name Artifact Name Artifact Name"
+                sha="a1b2c3"
+                statuses={[
+                  {
+                    icon: 'app-window',
+                    level: 'error'
+                  }
+                ]}
+                stages={[
+                  {
+                    level: 'done'
+                  },
+                  {
+                    level: 'done'
+                  },
+                  {
+                    level: 'done'
+                  }
+                ]}
+              />
+
+              <ArtifactRow
+                clickHandler={this.toggleArtifactDetail}
+                currentUrl={this.props.match.url}
+                version="#122"
+                name="Artifact Name Artifact Name Artifact Name Artifact Name Artifact Name"
+                sha="a1b2c3"
+                statuses={[
+                ]}
+                stages={[
+                  {
+                    level: 'done'
+                  },
+                  {
+                    level: 'done'
+                  },
+                  {
+                    level: 'done'
+                  }
+                ]}
+              />
+
             </div>
 
             <div className={styles.environmentsColumn}>
