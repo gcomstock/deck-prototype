@@ -11,6 +11,7 @@ import styles from './GenericRowRoute.module.css';
 
 
 import { ACTIVE_QUERY, ROUTES } from './mockdata/consts';
+import { templatingSingle } from './mockdata/templatingSingle';
 import { clustersSingle } from './mockdata/clustersSingle';
 import { clustersMulti } from './mockdata/clustersMulti';
 
@@ -31,7 +32,8 @@ export default class Route__GenericRowRoute extends React.Component {
       isFiltersOpen: true,
       activeObjectRowKey: '',
       selectedOptions: {},
-      mockData: this.getMockData(this.props.activeQuery, this.props.route),
+
+      mockData: this.getMockData(props.activeQuery, props.route),
       drawer: {
         icon: '',
         drawerWidth: 480,
@@ -79,33 +81,37 @@ export default class Route__GenericRowRoute extends React.Component {
 
   // clear mutated state and get a fresh copy of the mock data
   resetMockData() {
-    this.setState({ mockData: _.cloneDeep(this.getMockData(this.props.activeQuery, this.props.route)) });
+    this.setState({
+      mockData: _.cloneDeep(this.getMockData(this.props.activeQuery, this.props.route))
+    });
   }
+
 
   getMockData(activeQuery, route) {
     if (route === ROUTES.CLUSTERS && activeQuery === ACTIVE_QUERY.NO_APP)
-      return clustersSingle;
+      return [];
     if (route === ROUTES.CLUSTERS && activeQuery === ACTIVE_QUERY.SINGLE_APP)
       return clustersSingle;
     if (route === ROUTES.CLUSTERS && activeQuery === ACTIVE_QUERY.MULTI_APP)
       return clustersMulti;
     if (route === ROUTES.TEMPLATING && activeQuery === ACTIVE_QUERY.NO_APP)
-      return clustersSingle;
+      return [];
     if (route === ROUTES.TEMPLATING && activeQuery === ACTIVE_QUERY.SINGLE_APP)
-      return clustersSingle;
+      return templatingSingle;
     if (route === ROUTES.TEMPLATING && activeQuery === ACTIVE_QUERY.MULTI_APP)
-      return clustersMulti;
+      return [];
 
-
-    return clustersSingle;
+    return [];
   }
 
 
-  componentWillReceiveProps (newProps) {
-    if ( newProps.activeQuery !== this.props.activeQuery) {
+  getSnapshotBeforeUpdate(prevProps) {
+    if ( this.props.activeQuery !== prevProps.activeQuery || this.props.route !== prevProps.route ) {
       this.resetMockData();
       window.scrollTo(0, 0);
     }
+
+    return null;
   }
 
 
@@ -117,21 +123,19 @@ export default class Route__GenericRowRoute extends React.Component {
       <>
         <div className={styles.scrollOffHeader}>
           <BreadCrumb path={this.props.route}/>
-          <Button text="Create Server Group" icon="search"/>
+          <Button text="Create Server Group" icon="add-another"/>
         </div>
 
 
         <div className={styles.ObjectRowHeader}>
           <div style={{flex: `0 1 ${totalContentWidth}`, display: 'flex', justifyContent: 'space-between'}}>
-
             <div className={styles.filterContent}>
-              <Button icon="search" theme="clear" clickHandler={this.toggleFilters}/>
+              <Button icon="filter" theme="clear" clickHandler={this.toggleFilters}/>
             </div>
             <div className={styles.selectionContent}>
-              <Button icon="collapse-all" theme="clear" clickHandler={this.toggleFilters}/>
-              <Button icon="collapse-all" theme="clear" clickHandler={this.toggleFilters}/>
+              <Button icon="expand-all" theme="clear" clickHandler={this.toggleFilters}/>
+              <Button icon="checkbox-unchecked" theme="clear" clickHandler={this.toggleFilters}/>
             </div>
-
           </div>
         </div>
 

@@ -37,7 +37,10 @@
   font-size: 14px;
   cursor: pointer;
   color: colorGrayMid;
-  padding-left: 8px;
+}
+
+.facet:last-child {
+  margin-bottom: 200px;
 }
 
 .facet:hover {
@@ -45,10 +48,8 @@
 }
 
 .facetCheckbox {
-  flex: 0 0 16px;
-  height: 16px;
-  background-color: rgba(0,0,0,0.1);
-  margin-right: 8px;
+  margin: 0 4px;
+  line-height: 0;
 }
 
 .facetName {

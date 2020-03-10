@@ -21,23 +21,33 @@ export default class Filters extends React.Component {
               facet category
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
 
@@ -45,23 +55,33 @@ export default class Filters extends React.Component {
               facet category
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
 
@@ -69,23 +89,33 @@ export default class Filters extends React.Component {
               facet category
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
 
@@ -93,26 +123,99 @@ export default class Filters extends React.Component {
               facet category
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
             <div className={styles.facet}>
-              <div className={styles.facetCheckbox}></div>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
               <div className={styles.facetName}>Facet</div>
             </div>
 
+            <div className={styles.facetTitle}>
+              facet category
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
+            <div className={styles.facet}>
+              <div className={styles.facetCheckbox}>
+                <i className={`ico icon-checkbox-unchecked`}/>
+              </div>
+              <div className={styles.facetName}>Facet</div>
+            </div>
 
           </div>
         </div>

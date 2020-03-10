@@ -11,7 +11,10 @@ export default class Drawer extends React.Component {
 
   close() {
     this.props.history.push(this.props.match.url.substring(0, this.props.match.url.lastIndexOf('/')));
-    this.props.resetMockData();
+
+    if (this.props.resetMockData) {
+      this.props.resetMockData();
+    }
   }
 
   render() {

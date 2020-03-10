@@ -3,36 +3,39 @@ import { Link } from 'react-router-dom';
 import StatusBubble from './StatusBubble';
 import classNames from 'classnames';
 
-import cssComponent from './ObjectRow.module.css';
-import cssVariables from './_variables.module.css';
-let styles = {};
-Object.assign(styles, cssComponent, cssVariables);
+import styles from './ObjectRow.module.css';
+
 
 
 export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForDrawer, depth = 0 }) => {
-
   return (
     <>
       {mockData.map((row, index) => (
-        <div>
-          <Link
-            className={buildRowClasses(row)}
-            to={`${currentUrl}/${row.url}`}
-            style={getStylesFromDepth(depth)}
-            data-mockdatakey={buildMockDataKey(mockDataKey, index)}
-            onClick={getPropsForDrawer}
-          >
-            <div className={styles.leftCol}>
-              <i className={`ico icon-${row.icon}`}/>
-              <span className={styles.rowTitle}>{row.title}</span>
+        <>
+          <div className={buildRowClasses(row)} style={getStylesFromDepth(depth)}>
+            <Link
+              className={styles.clickableArea}
+              to={`${currentUrl}/${row.url}`}
+              data-mockdatakey={buildMockDataKey(mockDataKey, index)}
+              onClick={getPropsForDrawer}
+            >
+              <div className={styles.leftCol}>
+                <i className={`ico icon-${row.icon}`}/>
+                <span className={styles.rowTitle}>{row.title}</span>
+              </div>
+              <div className={styles.centerCol}  style={{flex: `0 0 ${200 + depth*16}px`}}>
+                {renderStatusBubbles(row.statuses)}
+              </div>
+            </Link>
+            {row.children.length > 0 &&
+            <div className={styles.expand}>
+              <i className="ico icon-collapse"/>
             </div>
-            <div className={styles.centerCol}>
-              {renderStatusBubbles(row.statuses)}
+            }
+            <div className={styles.select}>
+              <i className={`ico icon-checkbox-unchecked`}/>
             </div>
-            <div className={styles.rightCol}>
-              
-            </div>
-          </Link>
+          </div>
 
           {/* Recursively render children */}
           {(row.children.length > 0) &&
@@ -44,7 +47,7 @@ export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForD
             mockDataKey={buildMockDataKey(mockDataKey, index) + '.children'}
           />
           }
-        </div>
+        </>
       ))}
     </>
   )

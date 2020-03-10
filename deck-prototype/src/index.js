@@ -9,6 +9,7 @@ import Route__Myteam from './Route__Myteam';
 import Route__Applications__App from './Route__Applications__App';
 import Route__GenericRowRoute from './Route__GenericRowRoute';
 import Route__Applications__App__Functions from './Route__Applications__App__Functions';
+import Route__Artifacts from './Route__Artifacts';
 import Header from './components/Header';
 import 'source-sans-pro/source-sans-pro.css';
 import styles from './components/_variables.module.css';
@@ -110,6 +111,7 @@ export class App extends React.Component {
               path='/applications/app/clusters'
               render={(props) => <Route__GenericRowRoute {...props}
                 isMobile={this.state.isMobile}
+                activeQuery={this.state.activeQuery}
                 route='clusters'
               />}
             />
@@ -127,6 +129,14 @@ export class App extends React.Component {
               path='/applications/app/functions'
               render={(props) => <Route__Applications__App__Functions {...props}
                 isMobile={this.state.isMobile}
+              />}
+            />
+
+            <Route
+              path='/applications/app/artifacts'
+              render={(props) => <Route__Artifacts {...props}
+                isMobile={this.state.isMobile}
+                route='artifact lifecycle'
               />}
             />
           </div>

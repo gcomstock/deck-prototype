@@ -1,6 +1,6 @@
 import React from 'react';
 import Drawer from './components/Drawer';
-import NoticeBubble from './components/NoticeBubble';
+import NoticeBubble from './components/NoticeCard';
 
 
 export default class Route__App__Functions__Function extends React.Component {

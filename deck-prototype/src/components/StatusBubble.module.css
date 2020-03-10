@@ -6,6 +6,11 @@
   margin-right: 4px;
   display: flex;
   align-items: flex-end;
+  display: inline-block;
+}
+
+.StatusBubble:last-child {
+  margin-right: 0;
 }
 
 .StatusBubble:hover {

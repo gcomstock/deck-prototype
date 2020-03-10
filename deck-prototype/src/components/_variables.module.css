@@ -12,6 +12,9 @@
 @value colorRowRule: #cccccc;
 @value colorRowHeader: #888888;
 @value colorGrayMid: #666666;
+@value colorActive: #FFF0A0;
+
+
 
 
 /*@value colorBgEmphasis: #f7f7f7;*/
@@ -34,8 +37,9 @@
 
 
 @value colorInfo: #61b9ff;
-@value colorWarn: #ffeba0;
-@value colorError: #ff8282;
+@value colorWarn: #FFAA26;
+@value colorError: #FF8282;
+@value colorOk: #00B237;
 
 
 @value colorButtonPrimary: #149CB5;

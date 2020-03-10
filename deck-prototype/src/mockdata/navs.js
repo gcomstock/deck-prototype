@@ -9,8 +9,8 @@ export const navSingleApp = [
         count: 320
       },
       {
-        name: 'environments',
-        to: '',
+        name: 'artifact lifecycle',
+        to: '/applications/app/artifacts',
         count: 1234
       },
       {
