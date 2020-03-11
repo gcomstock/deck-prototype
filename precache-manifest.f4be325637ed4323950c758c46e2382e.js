@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e48fe67e21bb70984bd6cb8d9482fe12",
+    "revision": "2552af710757e1675a6f38178f5964f7",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "dfa874be12e8227b7e08",
+    "revision": "c24506bf6d3d2f5ccd5b",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "3327e5cc9fc9f3a33fe7",
-    "url": "/deck-prototype/static/css/main.69bf947d.chunk.css"
+    "revision": "6b127c964b55a814624d",
+    "url": "/deck-prototype/static/css/main.e504bd12.chunk.css"
   },
   {
-    "revision": "dfa874be12e8227b7e08",
-    "url": "/deck-prototype/static/js/2.e9a622b8.chunk.js"
+    "revision": "c24506bf6d3d2f5ccd5b",
+    "url": "/deck-prototype/static/js/2.e23c69b3.chunk.js"
   },
   {
-    "revision": "3327e5cc9fc9f3a33fe7",
-    "url": "/deck-prototype/static/js/main.b2ebfd34.chunk.js"
+    "revision": "6b127c964b55a814624d",
+    "url": "/deck-prototype/static/js/main.bfc6ca54.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
@@ -216,6 +216,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deck-prototype/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2"
   },
   {
+    "revision": "785e78734574dde97dabf10d01ab8db1",
+    "url": "/deck-prototype/static/media/artifact.785e7873.svg"
+  },
+  {
+    "revision": "9aa4cad1a2b9ababcb067e989ef043aa",
+    "url": "/deck-prototype/static/media/close.9aa4cad1.svg"
+  },
+  {
+    "revision": "43d86bc30ac271975b7f56a69340758b",
+    "url": "/deck-prototype/static/media/environment.43d86bc3.svg"
+  },
+  {
     "revision": "2d99f18fc83bf6c1ba33cd2b86f48189",
     "url": "/deck-prototype/static/media/icomoon.2d99f18f.ttf"
   },
@@ -242,5 +254,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "519d6e219a9c406922f2e29246a728e4",
     "url": "/deck-prototype/static/media/navSettings.519d6e21.svg"
+  },
+  {
+    "revision": "2382d5be92db4a290c108d52d21eb023",
+    "url": "/deck-prototype/static/media/placeholder.2382d5be.svg"
   }
 ]);
