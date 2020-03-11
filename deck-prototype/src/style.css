@@ -109,7 +109,10 @@ i.ico-btn:hover {
 
 
 
-
+a.link {
+  color: #009CB7;
+  text-decoration: underline;
+}
 
 a[target="_blank"] {
   display: inline-block;

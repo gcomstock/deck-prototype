@@ -19,8 +19,8 @@
 }
 .version {
   flex: 0 0 48px;
-  margin: 0 8px 0 4px;
-  /*margin-right: 8px;*/
+  margin: 0 4px 0 8px;
+  /*margin-right: 4px;*/
 }
 .text {
   flex: 1 1 auto;
@@ -39,9 +39,8 @@
 }
 .statuses {
   flex: 1 0 auto;
-  margin-right: 4px;
+  /*margin-right: 4px;*/
 }
-
 .stages {
   display: flex;
   height: 6px;

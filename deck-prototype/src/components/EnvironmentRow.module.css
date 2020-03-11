@@ -1,0 +1,7 @@
+@value variables: "./_variables.module.css";
+@value colorPlaceholder from variables;
+
+.EnvironmentRow {
+  position: relative;
+  background-color: colorPlaceholder;
+}

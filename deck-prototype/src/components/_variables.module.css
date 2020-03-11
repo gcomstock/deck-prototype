@@ -4,7 +4,7 @@
 /*@value colorSubRow: #f6f6f6;*/
 
 @value colorBgEmphasis: #ffffff;
-@value colorBg: #f7f7f7;
+@value colorBg: #f4f4f4;
 @value colorMainRow: #e7e7e7; /* x-light */
 @value colorSubRow: #ececec;
 
@@ -46,7 +46,7 @@
 
 
 /*@value gradientHover: linear-gradient(to bottom, rgba(160,180,220,0.25), rgba(160,180,220,0.25));*/
-@value gradientHover: linear-gradient(to bottom, rgba(160,180,220,0.15), rgba(160,180,220,0.15));
+@value gradientHover: linear-gradient(to bottom, rgba(160,180,220,0.2), rgba(160,180,220,0.2));
 
 
 @value headerHeight: 56px;

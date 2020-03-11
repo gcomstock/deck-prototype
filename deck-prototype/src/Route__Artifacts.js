@@ -8,8 +8,11 @@ import { ObjectRow } from './components/ObjectRow';
 import Button from './components/Button';
 import Drawer from './components/Drawer';
 import ColumnHeader from './components/ColumnHeader';
+import ArtifactDetailHeader from './components/ArtifactDetailHeader';
 import NoticeCard from './components/NoticeCard';
 import ArtifactRow from './components/ArtifactRow';
+import EnvironmentRow from './components/EnvironmentRow';
+import KeyVal from './components/KeyVal';
 
 import styles from './Artifacts.module.css';
 
@@ -57,31 +60,68 @@ export default class Route__GenericRowRoute extends React.Component {
 
     if (this.state.isArtifactDetailsOpen) {
       return (
-        <h1>artifact data</h1>
+        <>
+          <ArtifactDetailHeader name="Artifact Name" version="#124" clickHandler={this.toggleArtifactDetail}/>
+
+          <div className={styles.artifactDetail}>
+            <div className={styles.headerTable}>
+              <div className={styles.headerTableLeft}>
+                This artifact is running in 9/9 possible clusters
+              </div>
+              <div className={styles.headerTableRight}>
+                <KeyVal keyName="Author" val="emunson" valLink="#"/>
+                <KeyVal keyName="On" val="Jan 2, 2020 20:34"/>
+                <KeyVal keyName="Change type" val="Release Candidate" valLink="#"/>
+                <KeyVal keyName="Commit" val="a1b2c3" valLink="#"/>
+              </div>
+            </div>
+
+            <ObjectRow
+              mockData={prodClusters}
+              currentUrl={this.props.match.url}
+              offset={true}
+            />
+          </div>
+        </>
       )
     }
 
     return (
       <>
-        <ColumnHeader text="Environments" icon="search"/>
+        <ColumnHeader text="Environments" icon="environment"/>
 
         <NoticeCard icon="search" title="1 artifact is deployed in 3 environments with no issues detected." isActive={true} noticeType={'ok'}/>
         <h3>PRODUCTION</h3>
+
+
         <ObjectRow
           mockData={prodClusters}
           currentUrl={this.props.match.url}
+          offset={true}
         />
+      {/*
+      <EnvironmentRow name="production">
+        <ObjectRow
+          mockData={prodClusters}
+          currentUrl={this.props.match.url}
+          offset={true}
+        />
+      </EnvironmentRow>
+      */}
+
 
         <h3>STAGING</h3>
           <ObjectRow
           mockData={prodClusters}
           currentUrl={this.props.match.url}
+          offset={true}
         />
 
         <h3>TEST</h3>
           <ObjectRow
           mockData={prodClusters}
           currentUrl={this.props.match.url}
+          offset={true}
         />
       </>
     )
@@ -119,7 +159,7 @@ export default class Route__GenericRowRoute extends React.Component {
 
 
             <div className={styles.artifactsColumn}>
-              <ColumnHeader text="Artifacts" icon="search"/>
+              <ColumnHeader text="Artifacts" icon="artifact"/>
 
 
               {/*version, name, sha, phases, statuses */}
@@ -148,52 +188,6 @@ export default class Route__GenericRowRoute extends React.Component {
                   },
                   {
                     level: 'ok'
-                  }
-                ]}
-              />
-
-              <ArtifactRow
-                clickHandler={this.toggleArtifactDetail}
-                currentUrl={this.props.match.url}
-                version="#122"
-                name="Artifact Name Artifact Name Artifact Name Artifact Name Artifact Name"
-                sha="a1b2c3"
-                statuses={[
-                  {
-                    icon: 'app-window',
-                    level: 'error'
-                  }
-                ]}
-                stages={[
-                  {
-                    level: 'done'
-                  },
-                  {
-                    level: 'done'
-                  },
-                  {
-                    level: 'done'
-                  }
-                ]}
-              />
-
-              <ArtifactRow
-                clickHandler={this.toggleArtifactDetail}
-                currentUrl={this.props.match.url}
-                version="#122"
-                name="Artifact Name Artifact Name Artifact Name Artifact Name Artifact Name"
-                sha="a1b2c3"
-                statuses={[
-                ]}
-                stages={[
-                  {
-                    level: 'done'
-                  },
-                  {
-                    level: 'done'
-                  },
-                  {
-                    level: 'done'
                   }
                 ]}
               />

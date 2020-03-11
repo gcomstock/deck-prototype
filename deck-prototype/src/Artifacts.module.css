@@ -1,5 +1,5 @@
 @value variables: "./components/_variables.module.css";
-@value colorBg, colorRowHeader from variables;
+@value colorBg, colorRowHeader, colorSubHeaderDark from variables;
 
 
 .GenericRowRoute {
@@ -41,7 +41,6 @@
 
 .mainContent {
   display: flex;
-  /*margin-right: 40px;*/
   margin-top: 24px;
 }
 
@@ -56,4 +55,27 @@
 
 .environmentsColumn {
   flex: 1 1 400px;
+  margin-right: 40px;
 }
+
+
+.artifactDetail {
+  background-color: #ffffff;
+  padding: 16px 0 64px 16px;
+}
+
+.headerTable {
+  display: flex;
+}
+
+.headerTableLeft {
+  flex: 0 0 280px;
+  font-style: italic;
+  font-size: 14px;
+  color: colorSubHeaderDark;
+}
+
+.headerTableRight {
+  flex: 1 1 auto;
+}
+
