@@ -55,6 +55,6 @@ td:nth-child(2) {
 }
 
 span {
-  width: 16px;
-  display: inline-block;
+  /*width: 16px;*/
+  /*display: inline-block;*/
 }

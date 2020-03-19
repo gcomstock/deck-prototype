@@ -1,5 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
+import Icon from './Icon';
+
 import styles from './NoticeCard.module.css';
 
 
@@ -18,7 +20,7 @@ export default function NoticeCard({ title, text, icon, noticeType, isActive }) 
     <div className={NoticeCardClasses}>
       {icon &&
       <div className={IconContainerClasses}>
-        <i className={`ico icon-${icon}`}/>
+        <Icon name={icon} fill="white" width="24px" />
       </div>
       }
       {title &&

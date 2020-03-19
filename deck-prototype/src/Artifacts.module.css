@@ -42,20 +42,24 @@
 .mainContent {
   display: flex;
   margin-top: 24px;
+  overflow: hidden;
 }
 
 
 
 .artifactsColumn {
-  flex: 0 1 280px;
+  flex: 0 0 296px;
   overflow: hidden;
-  margin-right: 16px;
+  margin-right: 24px;
+  margin-left: 8px;
 }
 
 
 .environmentsColumn {
   flex: 1 1 400px;
+  /*padding-right: 40px;*/
   margin-right: 40px;
+  /*overflow: hidden;*/
 }
 
 

@@ -7,12 +7,12 @@ import styles from './ObjectRow.module.css';
 
 
 
-export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForDrawer, depth = 0, offset = false }) => {
+export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForDrawer, depth = 0, bgColor = '#f4f4f4' }) => {
   return (
     <>
       {mockData.map((row, index) => (
-        <>
-          <div className={buildRowClasses(row)} style={getStylesFromDepth(depth, offset)}>
+        <div>
+          <div className={buildRowClasses(row)} style={getStylesFromDepth(depth)} style={{backgroundColor: bgColor}}>
             <Link
               className={styles.clickableArea}
               to={`${currentUrl}/${row.url}`}
@@ -47,17 +47,16 @@ export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForD
             mockDataKey={buildMockDataKey(mockDataKey, index) + '.children'}
           />
           }
-        </>
+        </div>
       ))}
     </>
   )
 };
 
 
-const getStylesFromDepth = (depth, offset) => {
+const getStylesFromDepth = (depth) => {
   return {
     marginLeft: 16*depth,
-    transform: offset ? 'translateX(40px)' : 'none', // offsets the checkbox to be outside parent
     position: 'sticky',
     top: 104 + 40*depth,
     zIndex: 500-depth

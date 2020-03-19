@@ -17,14 +17,14 @@ import KeyVal from './components/KeyVal';
 import styles from './Artifacts.module.css';
 
 import { ACTIVE_QUERY, ROUTES } from './mockdata/consts';
-import { prodClusters } from './mockdata/artifactLifecycle';
+import { prodClusters, stagingClusters, testClusters } from './mockdata/artifactLifecycle';
 
 
 const CONTENT_WIDTH = 1200;
 
 
 
-export default class Route__GenericRowRoute extends React.Component {
+export default class Route__Artifacts extends React.Component {
   constructor(props) {
     super(props);
 
@@ -76,11 +76,33 @@ export default class Route__GenericRowRoute extends React.Component {
               </div>
             </div>
 
-            <ObjectRow
-              mockData={prodClusters}
-              currentUrl={this.props.match.url}
-              offset={true}
-            />
+            <EnvironmentRow name="production" currentUrl={this.props.match.url} envType="prod">
+
+              <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." isActive={true} noticeType={'ok'}/>
+
+              <ObjectRow
+                mockData={prodClusters}
+                currentUrl={this.props.match.url}
+                bgColor={"#ffffff"}
+              />
+            </EnvironmentRow>
+
+            <EnvironmentRow name="staging" currentUrl={this.props.match.url}>
+              <ObjectRow
+                mockData={stagingClusters}
+                currentUrl={this.props.match.url}
+                bgColor={"#ffffff"}
+              />
+            </EnvironmentRow>
+
+            <EnvironmentRow name="test" currentUrl={this.props.match.url}>
+              <ObjectRow
+                mockData={testClusters}
+                currentUrl={this.props.match.url}
+                bgColor={"#ffffff"}
+              />
+            </EnvironmentRow>
+
           </div>
         </>
       )
@@ -90,39 +112,28 @@ export default class Route__GenericRowRoute extends React.Component {
       <>
         <ColumnHeader text="Environments" icon="environment"/>
 
-        <NoticeCard icon="search" title="1 artifact is deployed in 3 environments with no issues detected." isActive={true} noticeType={'ok'}/>
-        <h3>PRODUCTION</h3>
+        <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." isActive={true} noticeType={'ok'}/>
 
-
-        <ObjectRow
-          mockData={prodClusters}
-          currentUrl={this.props.match.url}
-          offset={true}
-        />
-      {/*
-      <EnvironmentRow name="production">
-        <ObjectRow
-          mockData={prodClusters}
-          currentUrl={this.props.match.url}
-          offset={true}
-        />
-      </EnvironmentRow>
-      */}
-
-
-        <h3>STAGING</h3>
+        <EnvironmentRow name="production" currentUrl={this.props.match.url} envType="prod">
           <ObjectRow
-          mockData={prodClusters}
-          currentUrl={this.props.match.url}
-          offset={true}
-        />
+            mockData={prodClusters}
+            currentUrl={this.props.match.url}
+          />
+        </EnvironmentRow>
 
-        <h3>TEST</h3>
+        <EnvironmentRow name="staging" currentUrl={this.props.match.url}>
           <ObjectRow
-          mockData={prodClusters}
-          currentUrl={this.props.match.url}
-          offset={true}
-        />
+            mockData={stagingClusters}
+            currentUrl={this.props.match.url}
+          />
+        </EnvironmentRow>
+
+        <EnvironmentRow name="test" currentUrl={this.props.match.url}>
+          <ObjectRow
+            mockData={testClusters}
+            currentUrl={this.props.match.url}
+          />
+        </EnvironmentRow>
       </>
     )
   }
@@ -153,7 +164,7 @@ export default class Route__GenericRowRoute extends React.Component {
         </div>
 
 
-        <div style={{maxWidth: totalContentWidth, display: 'flex'}}>
+        <div style={{ display: 'flex'}}>
           <Filters isOpen={this.state.isFiltersOpen}/>
           <div className={styles.mainContent} style={{flex: `0 1 ${totalContentWidth}`}}>
 
@@ -167,7 +178,7 @@ export default class Route__GenericRowRoute extends React.Component {
                 clickHandler={this.toggleArtifactDetail}
                 currentUrl={this.props.match.url}
                 version="#123"
-                name="Artifact Name Artifact Name Artifact Name Artifact Name Artifact Name"
+                name="Artifact Name"
                 sha="a1b2c3"
                 statuses={[
                   {
