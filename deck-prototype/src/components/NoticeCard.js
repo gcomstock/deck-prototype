@@ -1,26 +1,30 @@
 import React from 'react';
 import classNames from 'classnames';
-import Icon from './Icon';
+import { renderStatusBubbles } from '../helperMethods';
 
 import styles from './NoticeCard.module.css';
 
 
-export default function NoticeCard({ title, text, icon, noticeType, isActive }) {
+export default function NoticeCard({ title, text, icon, level = "inactive", isUpcoming, isException }) {
   const NoticeCardClasses = classNames({
     [styles.NoticeCard]: true,
-    [styles[noticeType]]: noticeType,
-    [styles.active]: isActive
+    [styles.isUpcoming]: isUpcoming,
+    [styles.isException]: isException
   });
   const IconContainerClasses = classNames({
-    [styles.iconContainer]: true,
-    [styles[noticeType]]: noticeType
+    [styles.iconContainer]: true
   });
+  const statuses = [{
+    icon: icon,
+    level: level,
+    size: 24
+  }];
 
   return (
     <div className={NoticeCardClasses}>
       {icon &&
       <div className={IconContainerClasses}>
-        <Icon name={icon} fill="white" width="24px" />
+        {renderStatusBubbles(statuses)}
       </div>
       }
       {title &&

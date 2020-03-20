@@ -17,7 +17,7 @@ import KeyVal from './components/KeyVal';
 import styles from './Artifacts.module.css';
 
 import { ACTIVE_QUERY, ROUTES } from './mockdata/consts';
-import { prodClusters, stagingClusters, testClusters } from './mockdata/artifactLifecycle';
+import { prodClusters, stagingClusters, testClusters, artifactColumn } from './mockdata/artifactLifecycle';
 
 
 const CONTENT_WIDTH = 1200;
@@ -77,8 +77,7 @@ export default class Route__Artifacts extends React.Component {
             </div>
 
             <EnvironmentRow name="production" currentUrl={this.props.match.url} envType="prod">
-
-              <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." isActive={true} noticeType={'ok'}/>
+              <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." level="good"/>
 
               <ObjectRow
                 mockData={prodClusters}
@@ -88,6 +87,11 @@ export default class Route__Artifacts extends React.Component {
             </EnvironmentRow>
 
             <EnvironmentRow name="staging" currentUrl={this.props.match.url}>
+              <NoticeCard icon="manual_judgement" title="Manual judgement will be required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
+              <NoticeCard icon="canary_fail" title="Canary failed (67/100) on Mar 3 23:23:59. Run time: 12 hours" level="error" isException={true}/>
+              <NoticeCard icon="canary_running" title="Canary is running. Run time: 8 hours" level="info"/>
+              <NoticeCard icon="deploy" title="Deployed to PRESTAGING on Mar 3 23:23:59" level="good"/>
+
               <ObjectRow
                 mockData={stagingClusters}
                 currentUrl={this.props.match.url}
@@ -96,13 +100,14 @@ export default class Route__Artifacts extends React.Component {
             </EnvironmentRow>
 
             <EnvironmentRow name="test" currentUrl={this.props.match.url}>
+              <NoticeCard icon="build" title="Continuous Integration Successful. Run time: 20 mins" level="good"/>
+
               <ObjectRow
                 mockData={testClusters}
                 currentUrl={this.props.match.url}
                 bgColor={"#ffffff"}
               />
             </EnvironmentRow>
-
           </div>
         </>
       )
@@ -112,7 +117,7 @@ export default class Route__Artifacts extends React.Component {
       <>
         <ColumnHeader text="Environments" icon="environment"/>
 
-        <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." isActive={true} noticeType={'ok'}/>
+        <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." level="good"/>
 
         <EnvironmentRow name="production" currentUrl={this.props.match.url} envType="prod">
           <ObjectRow
@@ -167,42 +172,10 @@ export default class Route__Artifacts extends React.Component {
         <div style={{ display: 'flex'}}>
           <Filters isOpen={this.state.isFiltersOpen}/>
           <div className={styles.mainContent} style={{flex: `0 1 ${totalContentWidth}`}}>
-
-
             <div className={styles.artifactsColumn}>
               <ColumnHeader text="Artifacts" icon="artifact"/>
 
-
-              {/*version, name, sha, phases, statuses */}
-              <ArtifactRow
-                clickHandler={this.toggleArtifactDetail}
-                currentUrl={this.props.match.url}
-                version="#123"
-                name="Artifact Name"
-                sha="a1b2c3"
-                statuses={[
-                  {
-                    icon: 'app-window',
-                    level: 'error'
-                  },
-                  {
-                    icon: 'app-window',
-                    level: 'error'
-                  }
-                ]}
-                stages={[
-                  {
-                    level: 'ok'
-                  },
-                  {
-                    level: 'ok'
-                  },
-                  {
-                    level: 'ok'
-                  }
-                ]}
-              />
-
+              <ArtifactRow mockData={artifactColumn} clickHandler={this.toggleArtifactDetail}/>
             </div>
 
             <div className={styles.environmentsColumn}>

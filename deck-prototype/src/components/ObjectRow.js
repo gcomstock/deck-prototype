@@ -12,7 +12,12 @@ export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForD
     <>
       {mockData.map((row, index) => (
         <div>
-          <div className={buildRowClasses(row)} style={getStylesFromDepth(depth)} style={{backgroundColor: bgColor}}>
+          <div className={buildRowClasses(row)} style={getStylesFromDepth(depth, bgColor)}>
+            {row.progress &&
+              <div className={styles.pieContainer}>
+                <div className={styles.pie}></div>
+              </div>
+            }
             <Link
               className={styles.clickableArea}
               to={`${currentUrl}/${row.url}`}
@@ -54,12 +59,13 @@ export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForD
 };
 
 
-const getStylesFromDepth = (depth) => {
+const getStylesFromDepth = (depth, bgColor) => {
   return {
-    marginLeft: 16*depth,
+    marginLeft: 32+(16*depth),
     position: 'sticky',
     top: 104 + 40*depth,
-    zIndex: 500-depth
+    zIndex: 500-depth,
+    backgroundColor: bgColor
   }
 };
 

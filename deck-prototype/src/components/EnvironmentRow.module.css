@@ -26,11 +26,6 @@
   color: colorProd;
 }
 
-.rowOffset {
-  transform: translateX(40px) /* offsets the checkbox to be outside parent */
-}
-
-
 .clickableArea {
   flex: 1 1 auto;
   height: 100%;
@@ -38,7 +33,6 @@
   align-items: center;
   padding-left: 8px;
 }
-
 
 .envLabel {
   text-transform: uppercase;

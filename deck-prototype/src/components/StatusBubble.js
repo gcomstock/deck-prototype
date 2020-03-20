@@ -1,15 +1,15 @@
 import React from 'react';
-import cssComponent from './StatusBubble.module.css';
-import cssVariables from './_variables.module.css';
-let styles = {};
-Object.assign(styles, cssComponent, cssVariables);
+import Icon from './Icon';
+import styles from './StatusBubble.module.css';
 
 
-const StatusBubble = ({ level, icon, hoverText, qty }) => {
+const StatusBubble = ({ level, icon, hoverText, qty, size = '24' }) => {
+  console.log(level);
+
   return (
     <div className={`${styles.StatusBubble} `}>
       <span className={`${styles.icon} ${styles[level]}`}>
-        <i className={`icon-${icon}`}/>
+        <Icon name={icon} fill="white" size={size} />
       </span>
       {qty &&
       <span className={`${styles.qty} ${styles[level]}`}>

@@ -12,6 +12,7 @@ export const renderStatusBubbles = (statuses, maxLength) => {
         hoverText={status.hoverText}
         fullText={status.fullText}
         qty={status.qty}
+        size={status.size}
       />
     ))}
     </>

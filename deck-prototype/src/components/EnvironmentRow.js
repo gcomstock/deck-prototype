@@ -37,7 +37,7 @@ export default function EnvironmentRow({ name, currentUrl, envType = 'test', ...
       </div>
 
       {!isCollapsed &&
-        <div style={{margin: '16px 0 40px 32px'}}>
+        <div style={{margin: '16px 0 40px 8px'}}>
           {props.children}
         </div>
       }

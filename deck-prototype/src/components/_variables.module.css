@@ -15,8 +15,6 @@
 @value colorActive: #FFF0A0;
 
 
-
-
 /*@value colorBgEmphasis: #f7f7f7;*/
 /*@value colorBg: #ffffff;*/
 /*@value colorMainRow: #eeeeee;*/
@@ -40,6 +38,10 @@
 @value colorWarn: #FFAA26;
 @value colorError: #FF8282;
 @value colorOk: #00B237;
+@value colorInactive: #999999;
+@value colorGood: #00B237;
+
+
 @value colorProd: #BE0000;
 
 @value colorButtonPrimary: #149CB5;

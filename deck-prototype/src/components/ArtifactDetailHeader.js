@@ -9,7 +9,7 @@ export default function ArtifactDetailHeader({ name, version, clickHandler}) {
   return (
     <div className={styles.ArtifactDetailHeader}>
       <div className={styles.leftGrouping}>
-        <Icon name="artifact" fill="white" width="40px" />
+        <Icon name="artifact" fill="white" size="40" />
         <span className={styles.versionPill}>{version}</span>
       </div>
 
@@ -18,7 +18,7 @@ export default function ArtifactDetailHeader({ name, version, clickHandler}) {
       </div>
 
       <div className={styles.close} onClick={clickHandler}>
-        <Icon name="close" fill="white" width="24px" />
+        <Icon name="close" fill="white" size="24" />
       </div>
     </div>
   )
