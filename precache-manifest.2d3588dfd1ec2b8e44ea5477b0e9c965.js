@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cdfb71025c28b008afc316338c93746b",
+    "revision": "1e0ef231dd860986786ee73efa401540",
     "url": "/deck-prototype/index.html"
   },
   {
-    "revision": "1fd860d91d45ddce5b6d",
+    "revision": "9f9b92ba44385076ab35",
     "url": "/deck-prototype/static/css/2.d61080d3.chunk.css"
   },
   {
-    "revision": "2cf8ab431b16d6264bed",
-    "url": "/deck-prototype/static/css/main.a37210bf.chunk.css"
+    "revision": "1eab3dcd8a73b8cf2161",
+    "url": "/deck-prototype/static/css/main.c390fa07.chunk.css"
   },
   {
-    "revision": "1fd860d91d45ddce5b6d",
-    "url": "/deck-prototype/static/js/2.3ad73a2d.chunk.js"
+    "revision": "9f9b92ba44385076ab35",
+    "url": "/deck-prototype/static/js/2.1e06ad42.chunk.js"
   },
   {
-    "revision": "2cf8ab431b16d6264bed",
-    "url": "/deck-prototype/static/js/main.4ad3cd7a.chunk.js"
+    "revision": "1eab3dcd8a73b8cf2161",
+    "url": "/deck-prototype/static/js/main.c2d3540d.chunk.js"
   },
   {
     "revision": "db237e86c7ed2a625df5",
@@ -220,6 +220,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deck-prototype/static/media/artifact.785e7873.svg"
   },
   {
+    "revision": "77d5d7d00b9f89663007eba6d814d08c",
+    "url": "/deck-prototype/static/media/build.77d5d7d0.svg"
+  },
+  {
+    "revision": "06ca5f6912056ba800954a7a2f1301f5",
+    "url": "/deck-prototype/static/media/canary-fail.06ca5f69.svg"
+  },
+  {
+    "revision": "e683e966cae3aaf4b25e9912bbd800c2",
+    "url": "/deck-prototype/static/media/canary-pass.e683e966.svg"
+  },
+  {
+    "revision": "7225dcc1a89d1f6a33da277eb473b0d4",
+    "url": "/deck-prototype/static/media/canary-running.7225dcc1.svg"
+  },
+  {
     "revision": "094a8615d1788ed7e1e67ad8bf223f83",
     "url": "/deck-prototype/static/media/check_badge.094a8615.svg"
   },
@@ -242,6 +258,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9b96d80078551fa067e226d63a756d05",
     "url": "/deck-prototype/static/media/icomoon.9b96d800.woff"
+  },
+  {
+    "revision": "d2c447c0c3181d88bef11db2fac87dce",
+    "url": "/deck-prototype/static/media/manual-judgement.d2c447c0.svg"
   },
   {
     "revision": "16f8362643327a16284a6c7e9d4cae06",
