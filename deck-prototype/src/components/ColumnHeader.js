@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ColumnHeader.module.css';
-import Icon from './Icon';
+import Icon from '../assets/Icon.js';
 
 
 export default function ColumnHeader({ text, icon }) {

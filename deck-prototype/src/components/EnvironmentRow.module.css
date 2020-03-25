@@ -52,6 +52,10 @@
   background-color: colorProd;
 }
 
+.none {
+  color: colorGrayMid;
+}
+
 
 .select {
   margin-right: -40px;

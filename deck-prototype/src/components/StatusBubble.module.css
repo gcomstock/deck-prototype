@@ -27,11 +27,6 @@
   border-radius: 32px;
   position: relative;
   z-index: 1;
-
-  padding: 4px;
-
-  /*width: 32px;*/
-  /*height: 32px;*/
 }
 
 .info {

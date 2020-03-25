@@ -77,7 +77,9 @@ export default class Route__Artifacts extends React.Component {
             </div>
 
             <EnvironmentRow name="production" currentUrl={this.props.match.url} envType="prod">
-              <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." level="good"/>
+              <div style={{marginBottom: '16px'}}>
+                <NoticeCard icon="checkBadge" title="1 artifact is deployed in 3 environments with no issues detected." level="good"/>
+              </div>
 
               <ObjectRow
                 mockData={prodClusters}
@@ -87,10 +89,16 @@ export default class Route__Artifacts extends React.Component {
             </EnvironmentRow>
 
             <EnvironmentRow name="staging" currentUrl={this.props.match.url}>
-              <NoticeCard icon="manual_judgement" title="Manual judgement will be required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
-              <NoticeCard icon="canary_fail" title="Canary failed (67/100) on Mar 3 23:23:59. Run time: 12 hours" level="error" isException={true}/>
-              <NoticeCard icon="canary_running" title="Canary is running. Run time: 8 hours" level="info"/>
-              <NoticeCard icon="deploy" title="Deployed to PRESTAGING on Mar 3 23:23:59" level="good"/>
+
+              <div style={{marginBottom: '16px'}}>
+                <NoticeCard icon="manualJudgement" title="Manual judgement will be required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
+                <NoticeCard icon="mdConstraintGeneric" title="A generic constraint required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
+                <NoticeCard icon="mdConstraintDependsOn" title="A dependson constraint required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
+                <NoticeCard icon="mdConstraintAllowedTimes" title="Will only be deployed to PRODUCTION between x and y" level="inactive" isUpcoming={true}/>
+                <NoticeCard icon="canaryFail" title="Canary failed (67/100) on Mar 3 23:23:59. Run time: 12 hours" level="error" isException={true}/>
+                <NoticeCard icon="canaryRunning" title="Canary is running. Run time: 8 hours" level="info"/>
+                <NoticeCard icon="securityGroup" title="dont mind me im just a security group icon" level="inactive" isUpcoming={true}/>
+              </div>
 
               <ObjectRow
                 mockData={stagingClusters}
@@ -100,13 +108,22 @@ export default class Route__Artifacts extends React.Component {
             </EnvironmentRow>
 
             <EnvironmentRow name="test" currentUrl={this.props.match.url}>
-              <NoticeCard icon="build" title="Continuous Integration Successful. Run time: 20 mins" level="good"/>
+
+              <div style={{marginBottom: '16px'}}>
+                <NoticeCard icon="cloudDecommissioned" title="Decommissioned on Mar 3 23:23:59" />
+                <NoticeCard icon="cloudDeployed" title="Deployed to PRESTAGING on Mar 3 23:23:59" level="good"/>
+                <NoticeCard icon="cloudProgress" title="Deploying to PRESTAGING on Mar 3 23:23:59" level="info"/>
+              </div>
 
               <ObjectRow
                 mockData={testClusters}
                 currentUrl={this.props.match.url}
                 bgColor={"#ffffff"}
               />
+            </EnvironmentRow>
+
+            <EnvironmentRow name="predeployment" currentUrl={this.props.match.url} envType="none">
+              <NoticeCard icon="build" title="Continuous Integration Successful. Run time: 20 mins" level="good"/>
             </EnvironmentRow>
           </div>
         </>
@@ -117,7 +134,9 @@ export default class Route__Artifacts extends React.Component {
       <>
         <ColumnHeader text="Environments" icon="environment"/>
 
-        <NoticeCard icon="check_badge" title="1 artifact is deployed in 3 environments with no issues detected." level="good"/>
+        <div style={{marginBottom: '16px'}}>
+          <NoticeCard icon="checkBadge" title="1 artifact is deployed in 3 environments with no issues detected." level="good"/>
+        </div>
 
         <EnvironmentRow name="production" currentUrl={this.props.match.url} envType="prod">
           <ObjectRow
@@ -162,8 +181,8 @@ export default class Route__Artifacts extends React.Component {
               <Button icon="filter" theme="clear" clickHandler={this.toggleFilters}/>
             </div>
             <div className={styles.selectionContent}>
-              <Button icon="expand-all" theme="clear" clickHandler={this.toggleFilters}/>
-              <Button icon="checkbox-unchecked" theme="clear" clickHandler={this.toggleFilters}/>
+              <Button icon="expandAll" theme="clear" clickHandler={this.toggleFilters}/>
+              <Button icon="checkboxUnchecked" theme="clear" clickHandler={this.toggleFilters}/>
             </div>
           </div>
         </div>

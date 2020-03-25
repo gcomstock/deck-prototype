@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import StatusBubble from './StatusBubble';
 import classNames from 'classnames';
+import Icon from '../assets/Icon.js';
 
 import styles from './ObjectRow.module.css';
 
@@ -14,9 +15,9 @@ export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForD
         <div>
           <div className={buildRowClasses(row)} style={getStylesFromDepth(depth, bgColor)}>
             {row.progress &&
-              <div className={styles.pieContainer}>
-                <div className={styles.pie}></div>
-              </div>
+            <div className={styles.pieContainer}>
+              <div className={styles.pie}></div>
+            </div>
             }
             <Link
               className={styles.clickableArea}
@@ -25,7 +26,12 @@ export const ObjectRow = ({ mockDataKey = '', mockData, currentUrl, getPropsForD
               onClick={getPropsForDrawer}
             >
               <div className={styles.leftCol}>
-                <i className={`ico icon-${row.icon}`}/>
+                {row.icon &&
+                <>
+                  <Icon name={row.icon} size="medium"/>
+                  <span style={{width: '8px'}} />
+                </>
+                }
                 <span className={styles.rowTitle}>{row.title}</span>
               </div>
               <div className={styles.centerCol}  style={{flex: `0 0 ${200 + depth*16}px`}}>

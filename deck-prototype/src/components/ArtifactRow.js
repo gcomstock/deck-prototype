@@ -19,7 +19,7 @@ export default function ArtifactRow({ mockData = null, clickHandler }) {
           </div>
           {row.statuses.length > 0 &&
             <div className={styles.statuses}>
-              {renderStatusBubbles(row.statuses)}
+              {renderStatusBubbles(row.statuses, 'small')}
             </div>
           }
         </div>

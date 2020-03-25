@@ -1,11 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
 import { renderStatusBubbles } from '../helperMethods';
-
 import styles from './NoticeCard.module.css';
 
 
-export default function NoticeCard({ title, text, icon, level = "inactive", isUpcoming, isException }) {
+export default function NoticeCard({ title, text, icon, level = 'inactive', isUpcoming, isException }) {
   const NoticeCardClasses = classNames({
     [styles.NoticeCard]: true,
     [styles.isUpcoming]: isUpcoming,
@@ -17,7 +16,7 @@ export default function NoticeCard({ title, text, icon, level = "inactive", isUp
   const statuses = [{
     icon: icon,
     level: level,
-    size: 24
+    size: 'medium'
   }];
 
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import StatusBubble from './components/StatusBubble';
 
 
-export const renderStatusBubbles = (statuses, maxLength) => {
+export const renderStatusBubbles = (statuses, size, maxLength) => {
   return (
     <>
     {statuses.map((status) => (
@@ -12,7 +12,7 @@ export const renderStatusBubbles = (statuses, maxLength) => {
         hoverText={status.hoverText}
         fullText={status.fullText}
         qty={status.qty}
-        size={status.size}
+        size={status.size || size}
       />
     ))}
     </>
