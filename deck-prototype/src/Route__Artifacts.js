@@ -91,13 +91,13 @@ export default class Route__Artifacts extends React.Component {
             <EnvironmentRow name="staging" currentUrl={this.props.match.url}>
 
               <div style={{marginBottom: '16px'}}>
-                <NoticeCard icon="manualJudgement" title="Manual judgement will be required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
-                <NoticeCard icon="mdConstraintGeneric" title="A generic constraint required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
-                <NoticeCard icon="mdConstraintDependsOn" title="A dependson constraint required before promotion to PRODUCTION" level="inactive" isUpcoming={true}/>
-                <NoticeCard icon="mdConstraintAllowedTimes" title="Will only be deployed to PRODUCTION between x and y" level="inactive" isUpcoming={true}/>
-                <NoticeCard icon="canaryFail" title="Canary failed (67/100) on Mar 3 23:23:59. Run time: 12 hours" level="error" isException={true}/>
+                <NoticeCard icon="manualJudgement" title="Manual judgement will be required before promotion to PRODUCTION" text="a longer description can be provided" level="upcoming"/>
+                <NoticeCard icon="mdConstraintGeneric" title="A generic constraint required before promotion to PRODUCTION" level="inactive"/>
+                <NoticeCard icon="mdConstraintDependsOn" title="A dependson constraint required before promotion to PRODUCTION" level="inactive"/>
+                <NoticeCard icon="mdConstraintAllowedTimes" title="Will only be deployed to PRODUCTION between x and y" level="warn"/>
+                <NoticeCard icon="canaryFail" title="Canary failed (67/100) on Mar 3 23:23:59. Run time: 12 hours" level="error"/>
                 <NoticeCard icon="canaryRunning" title="Canary is running. Run time: 8 hours" level="info"/>
-                <NoticeCard icon="securityGroup" title="dont mind me im just a security group icon" level="inactive" isUpcoming={true}/>
+                <NoticeCard icon="securityGroup" title="dont mind me im just a security group icon" level="inactive"/>
               </div>
 
               <ObjectRow

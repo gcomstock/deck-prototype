@@ -1,5 +1,5 @@
 @value variables: "./_variables.module.css";
-@value colorActive, colorOk, colorError, colorSubHeaderLight, gradientHover from variables;
+@value colorActive, colorGood, colorError, colorSubHeaderLight, gradientHover from variables;
 
 .ArtifactRow {
   height: 48px;
@@ -46,7 +46,7 @@
   padding-bottom: 2px;
 }
 .stage {
-  background-color: colorOk;
+  background-color: colorGood;
   flex: 1 1 auto;
   margin-right: 2px;
 }

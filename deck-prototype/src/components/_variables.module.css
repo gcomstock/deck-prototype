@@ -15,11 +15,6 @@
 @value colorActive: #FFF0A0;
 
 
-/*@value colorBgEmphasis: #f7f7f7;*/
-/*@value colorBg: #ffffff;*/
-/*@value colorMainRow: #eeeeee;*/
-/*@value colorSubRow: #f4f4f4;*/
-
 @value colorKey: rgb(100,140,175);
 
 
@@ -35,15 +30,21 @@
 
 
 @value colorInfo: #61b9ff;
-@value colorWarn: #FFAA26;
+@value colorInfoBg: #E6F0FF;
+@value colorWarn: #FFAD26;
+@value colorWarnBg: #F8F8BB;
 @value colorError: #FF8282;
-@value colorOk: #00B237;
+@value colorErrorBg: #FFE1E1;
 @value colorInactive: #999999;
-@value colorGood: #00B237;
+@value colorInactiveBg: #EBEBEB;
+@value colorGood: #64c800;
+@value colorGoodBg: #e1f5d2;
+@value colorUpcoming: #C0C0C0;
+
 
 
 @value colorProd: #BE0000;
-@value colorButtonPrimary: #149CB5;
+@value colorActionPrimary: #5A5FB4;
 
 
 /*@value gradientHover: linear-gradient(to bottom, rgba(160,180,220,0.25), rgba(160,180,220,0.25));*/

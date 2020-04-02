@@ -1,9 +1,9 @@
 @value variables: "./_variables.module.css";
-@value colorRowHeader, gradientHover from variables;
+@value colorActionPrimary, gradientHover from variables;
 
 .Button {
   border-radius: 2px;
-  background-color: #5A5FB4;
+  background-color: colorActionPrimary;
   color: #fff;
   height: 32px;
   min-width: 32px;
@@ -33,7 +33,7 @@
 }
 
 .text {
-  padding: 0 12px;
+  padding: 0 16px;
 }
 
 .iconAndText i {
@@ -42,6 +42,6 @@
 
 .themeClear {
   background-color: transparent;
-  border: 1px solid colorRowHeader;
-  color: colorRowHeader;
+  border: 1px solid colorActionPrimary;
+  color: colorActionPrimary;
 }
